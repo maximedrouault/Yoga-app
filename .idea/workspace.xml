@@ -4,35 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Yoga-app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a1d6f2c1-e237-47a8-954a-9b39a443f8e9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a1d6f2c1-e237-47a8-954a-9b39a443f8e9/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a1d6f2c1-e237-47a8-954a-9b39a443f8e9/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a1d6f2c1-e237-47a8-954a-9b39a443f8e9/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a1d6f2c1-e237-47a8-954a-9b39a443f8e9/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a1d6f2c1-e237-47a8-954a-9b39a443f8e9/storage_v2/_src_/schema/test.kkQ2AA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/front.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/back/pom.xml" afterDir="false" />
+    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="Some fixes to make the project work">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/.nyc_output/out.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/.nyc_output/out.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/cypress/e2e/login.cy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/cypress/e2e/login.cy.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/cypress/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/cypress/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/front/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,41 +48,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cypress.all tests in login.cy.ts.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.SpringBootSecurityJwtApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/OC_DFJA/P5/Yoga-app/front&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.cypress:open.executor&quot;: &quot;Run&quot;,
-    &quot;npm.cypress:run.executor&quot;: &quot;Run&quot;,
-    &quot;npm.e2e.executor&quot;: &quot;Run&quot;,
-    &quot;npm.e2e:coverage.executor&quot;: &quot;Run&quot;,
-    &quot;npm.npm install in front.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;npm.test.executor&quot;: &quot;Run&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\OC_DFJA\\P5\\Yoga-app\\front\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cypress.all tests in login.cy.ts.executor": "Run",
+    "JavaScript Debug.not-found.component.html.executor": "Run",
+    "Jest.MeComponent.should create.executor": "Run",
+    "Jest.NotFoundComponent.executor": "Coverage",
+    "Jest.NotFoundComponent.should create.executor": "Coverage",
+    "Jest.NotFoundComponent.should display a \"Page not found !\" message.executor": "Run",
+    "Jest.NotFoundComponent.should display a message \"Page not found !\".executor": "Run",
+    "Jest.Tests in login\\.executor": "Coverage",
+    "Jest.me.component.spec.ts.executor": "Coverage",
+    "Jest.not-found.component.spec.ts.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "Spring Boot.SpringBootSecurityJwtApplication.executor": "Run",
+    "git-widget-placeholder": "tests/unit",
+    "ignore.virus.scanning.warn.message": "true",
+    "ignore_missing_gitignore": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/OC_DFJA/P5/Angular-workshop",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "D:/OC_DFJA/P5/Yoga-app/front/node_modules/@angular/cli",
+    "nodejs_package_manager_path": "npm",
+    "npm.cypress:open.executor": "Run",
+    "npm.cypress:run.executor": "Run",
+    "npm.e2e.executor": "Run",
+    "npm.e2e:ci.executor": "Run",
+    "npm.e2e:coverage.executor": "Run",
+    "npm.npm install in front.executor": "Run",
+    "npm.start.executor": "Run",
+    "npm.test.executor": "Run",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "D:\\OC_DFJA\\P5\\Yoga-app\\front\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -115,18 +103,55 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Cypress.all tests in login.cy.ts">
-    <configuration name="all tests in login.cy.ts" type="JavaScriptTestRunnerCypress" temporary="true">
+  <component name="RunManager" selected="Jest.NotFoundComponent.should display a message &quot;Page not found !&quot;">
+    <configuration name="NotFoundComponent" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
-      <cypress-package value="$PROJECT_DIR$/front/node_modules/cypress" />
+      <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
-      <cypress-options value="-q" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/front/cypress/e2e/login.cy.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.spec.ts" />
       <test-names>
-        <test-name value="Login spec" />
+        <test-name value="NotFoundComponent" />
       </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="NotFoundComponent.should display a &quot;Page not found !&quot; message" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
+      <working-dir value="$PROJECT_DIR$/front" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.spec.ts" />
+      <test-names>
+        <test-name value="NotFoundComponent" />
+        <test-name value="should display a &quot;Page not found !&quot; message" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="NotFoundComponent.should display a message &quot;Page not found !&quot;" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
+      <working-dir value="$PROJECT_DIR$/front" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.spec.ts" />
+      <test-names>
+        <test-name value="NotFoundComponent" />
+        <test-name value="should display a message &quot;Page not found !&quot;" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="not-found.component.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
+      <working-dir value="$PROJECT_DIR$/front" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.spec.ts" />
+      <method v="2" />
+    </configuration>
+    <configuration name="not-found.component.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:5500/Yoga-app/front/src/app/components/not-found/not-found.component.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="SpringBootSecurityJwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -142,36 +167,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cypress:run" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/front/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="cypress:run" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="e2e" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/front/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="e2e" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="e2e:coverage" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/front/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="e2e:coverage" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/front/package.json" />
       <command value="run" />
@@ -182,23 +177,13 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/front/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.cypress:run" />
-        <item itemvalue="npm.test" />
-        <item itemvalue="npm.e2e:coverage" />
-        <item itemvalue="npm.e2e" />
-        <item itemvalue="Cypress.all tests in login.cy.ts" />
+        <item itemvalue="Jest.NotFoundComponent.should display a message &quot;Page not found !&quot;" />
+        <item itemvalue="Jest.NotFoundComponent" />
+        <item itemvalue="JavaScript Debug.not-found.component.html" />
+        <item itemvalue="Jest.not-found.component.spec.ts" />
+        <item itemvalue="Jest.NotFoundComponent.should display a &quot;Page not found !&quot; message" />
       </list>
     </recent_temporary>
   </component>
@@ -227,10 +212,58 @@
       <workItem from="1738939022231" duration="211000" />
       <workItem from="1738939245016" duration="879000" />
       <workItem from="1738940155159" duration="560000" />
+      <workItem from="1738940740588" duration="940000" />
+      <workItem from="1738941704778" duration="552000" />
+      <workItem from="1738942637245" duration="85000" />
+      <workItem from="1738943334605" duration="660000" />
+      <workItem from="1739172304289" duration="394000" />
+      <workItem from="1739172718368" duration="16231000" />
+      <workItem from="1739196938576" duration="8246000" />
+      <workItem from="1739206981599" duration="407000" />
+      <workItem from="1739207904069" duration="3904000" />
+      <workItem from="1739214467811" duration="3000" />
+      <workItem from="1739257507348" duration="11884000" />
     </task>
+    <task id="LOCAL-00001" summary="Some fixes to make the project work">
+      <option name="closed" value="true" />
+      <created>1738940971418</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738940971418</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Some fixes to make the project work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some fixes to make the project work" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JavaScriptTestRunnerJest">
+        <watch expression="fixture.nativeElement.previousElementSibling" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Yoga_app$NotFoundComponent_should_create.info" NAME="NotFoundComponent.should create Coverage Results" MODIFIED="1739183857171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$me_component_spec_ts.info" NAME="me.component.spec.ts Coverage Results" MODIFIED="1738942225729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$Tests_in_login_.info" NAME="Tests in login\ Coverage Results" MODIFIED="1739184932330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$NotFoundComponent.info" NAME="NotFoundComponent Coverage Results" MODIFIED="1739211420344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
