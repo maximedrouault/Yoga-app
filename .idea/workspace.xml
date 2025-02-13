@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="Some fixes to make the project work">
+    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="U.T. added for me.component">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.nyc_output/out.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/.nyc_output/out.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/components/me/me.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/components/me/me.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/components/me/me.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/components/me/me.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/components/me/me.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/components/me/me.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +36,9 @@
     &quot;accountId&quot;: &quot;109d04c2-547f-425c-b69a-8ce05a900d48&quot;
   }
 }</component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -52,12 +56,76 @@
   "keyToString": {
     "Cypress.all tests in login.cy.ts.executor": "Run",
     "JavaScript Debug.not-found.component.html.executor": "Run",
+    "Jest.MeComponent.Admin user information area test suite.executor": "Run",
+    "Jest.MeComponent.Admin user information area test suite.should display admin status when user is an admin.executor": "Run",
+    "Jest.MeComponent.Admin user information area test suite.should display email when user is defined.executor": "Run",
+    "Jest.MeComponent.Admin user information area test suite.should display the firstName and lastName when user is defined.executor": "Run",
+    "Jest.MeComponent.Admin user information area test suite.should display user account creation date when user is defined.executor": "Run",
+    "Jest.MeComponent.Admin user information area test suite.should not display admin status when user is not an admin.executor": "Run",
+    "Jest.MeComponent.Admin user information area test suite.should not display delete button for admin user.executor": "Run",
+    "Jest.MeComponent.Admin user information area test suite.should not display email when user is undefined.executor": "Run",
+    "Jest.MeComponent.Admin user information area test suite.should not display the firstName and LastName when user is undefined.executor": "Run",
+    "Jest.MeComponent.Admin user information area test suite.should retrieve the authenticated user information when user exists.executor": "Run",
+    "Jest.MeComponent.Back button test suite.should display back button.executor": "Run",
+    "Jest.MeComponent.Back button test suite.should go back to the previous page when back button is clicked.executor": "Run",
+    "Jest.MeComponent.No admin user information area test suite.executor": "Run",
+    "Jest.MeComponent.No admin user information area test suite.should call userService.delete() when delete button is clicked.executor": "Run",
+    "Jest.MeComponent.No admin user information area test suite.should delete user account when delete button is clicked.executor": "Coverage",
+    "Jest.MeComponent.No admin user information area test suite.should display Delete account label when user is not an admin.executor": "Run",
+    "Jest.MeComponent.No admin user information area test suite.should display delete user account button when user is not an admin.executor": "Run",
+    "Jest.MeComponent.No admin user information area test suite.should display delete user account when user is not an admin.executor": "Run",
+    "Jest.MeComponent.No admin user information area test suite.should logout user after user account is deleted.executor": "Run",
+    "Jest.MeComponent.No admin user information area test suite.should navigate to home page after user account is deleted.executor": "Run",
+    "Jest.MeComponent.No admin user information area test suite.should not display admin status when user is not an admin.executor": "Run",
+    "Jest.MeComponent.No admin user information area test suite.should open MatSnackBar when delete user account is called.executor": "Run",
+    "Jest.MeComponent.User information area test suite when user is defined.should display email.executor": "Run",
+    "Jest.MeComponent.User information area test suite when user is defined.should display user account creation date.executor": "Run",
+    "Jest.MeComponent.User information area test suite when user is defined.should display user account update date.executor": "Run",
+    "Jest.MeComponent.User information area test suite when user is undefined.executor": "Run",
+    "Jest.MeComponent.User information area test suite when user is undefined.should not display user account update date when user update date is undefined.executor": "Run",
+    "Jest.MeComponent.User information area test suite.should display the firstName and lastName when user is defined.executor": "Run",
+    "Jest.MeComponent.User information area test suite.should display user account creation date when user is defined.executor": "Run",
+    "Jest.MeComponent.User information area test suite.should display user account update date when user is defined.executor": "Run",
+    "Jest.MeComponent.User information area test suite.should not display the firstName and LastName when user is undefined.executor": "Run",
+    "Jest.MeComponent.User information area test suite.should not display user account creation date when user is undefined.executor": "Run",
+    "Jest.MeComponent.User information area test suite.should not display user information area when user is undefined.executor": "Run",
+    "Jest.MeComponent.User information fetching test suite.should not retrieve the authenticated user onInit when user does not exist.executor": "Run",
+    "Jest.MeComponent.User information fetching test suite.should not retrieve the user onInit when user does not exist.executor": "Run",
+    "Jest.MeComponent.User information fetching test suite.should not retrieve user onInit when user does not exist.executor": "Run",
+    "Jest.MeComponent.User information fetching test suite.should retrieve the authenticated user onInit when user exists.executor": "Run",
+    "Jest.MeComponent.User information fetching test suite.should retrieve user onInit.executor": "Run",
+    "Jest.MeComponent.User information test suite.executor": "Run",
+    "Jest.MeComponent.User information test suite.should display admin status when user is an admin.executor": "Run",
+    "Jest.MeComponent.User information test suite.should display email when user is defined.executor": "Run",
+    "Jest.MeComponent.User information test suite.should display the firstName and lastName when user is defined.executor": "Run",
+    "Jest.MeComponent.User information test suite.should display user account creation date when user is defined.executor": "Run",
+    "Jest.MeComponent.User information test suite.should display user account update date when user is defined.executor": "Run",
+    "Jest.MeComponent.User information test suite.should not display user information area when user is undefined.executor": "Run",
+    "Jest.MeComponent.User information test suite.should not display user information when user is undefined.executor": "Run",
+    "Jest.MeComponent.User information title area test suite.should display user info title.executor": "Run",
+    "Jest.MeComponent.User information title test suite.executor": "Run",
+    "Jest.MeComponent.User information title test suite.should display user info title when user is defined.executor": "Run",
+    "Jest.MeComponent.User information title test suite.should display user info title.executor": "Run",
+    "Jest.MeComponent.executor": "Run",
+    "Jest.MeComponent.should call the UserService.getById method.executor": "Coverage",
     "Jest.MeComponent.should create.executor": "Run",
+    "Jest.MeComponent.should display admin status when user is an admin.executor": "Run",
+    "Jest.MeComponent.should display user email when user is defined.executor": "Run",
+    "Jest.MeComponent.should display user info title.executor": "Run",
+    "Jest.MeComponent.should display user information when user is defined.executor": "Run",
+    "Jest.MeComponent.should display user information.executor": "Debug",
+    "Jest.MeComponent.should display user names when user is defined.executor": "Run",
+    "Jest.MeComponent.should fetch user data on init.executor": "Run",
+    "Jest.MeComponent.should retrieve the authenticated user information.executor": "Run",
+    "Jest.MeComponent.should retrieve user information from UserService.executor": "Run",
+    "Jest.MeComponent.should return a mocked user.executor": "Run",
     "Jest.NotFoundComponent.executor": "Coverage",
     "Jest.NotFoundComponent.should create.executor": "Coverage",
     "Jest.NotFoundComponent.should display a \"Page not found !\" message.executor": "Run",
     "Jest.NotFoundComponent.should display a message \"Page not found !\".executor": "Run",
     "Jest.Tests in login\\.executor": "Coverage",
+    "Jest.Tests in me\\.executor": "Coverage",
+    "Jest.Tests in not-found\\.executor": "Coverage",
     "Jest.me.component.spec.ts.executor": "Coverage",
     "Jest.not-found.component.spec.ts.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -72,7 +140,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "ignore_missing_gitignore": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/OC_DFJA/P5/Angular-workshop",
+    "last_opened_file_path": "D:/OC_DFJA/P2/telesport",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -103,55 +171,56 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.NotFoundComponent.should display a message &quot;Page not found !&quot;">
-    <configuration name="NotFoundComponent" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
-      <working-dir value="$PROJECT_DIR$/front" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.spec.ts" />
-      <test-names>
-        <test-name value="NotFoundComponent" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="NotFoundComponent.should display a &quot;Page not found !&quot; message" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="npm.test">
+    <configuration name="MeComponent.No admin user information area test suite.should logout user after user account is deleted" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/components/me/me.component.spec.ts" />
       <test-names>
-        <test-name value="NotFoundComponent" />
-        <test-name value="should display a &quot;Page not found !&quot; message" />
+        <test-name value="MeComponent" />
+        <test-name value="No admin user information area test suite" />
+        <test-name value="should logout user after user account is deleted" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="NotFoundComponent.should display a message &quot;Page not found !&quot;" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="MeComponent.No admin user information area test suite.should navigate to home page after user account is deleted" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/components/me/me.component.spec.ts" />
       <test-names>
-        <test-name value="NotFoundComponent" />
-        <test-name value="should display a message &quot;Page not found !&quot;" />
+        <test-name value="MeComponent" />
+        <test-name value="No admin user information area test suite" />
+        <test-name value="should navigate to home page after user account is deleted" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="not-found.component.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="MeComponent.User information area test suite when user is defined.should display user account update date" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
+      <working-dir value="$PROJECT_DIR$/front" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/front/src/app/components/me/me.component.spec.ts" />
+      <test-names>
+        <test-name value="MeComponent" />
+        <test-name value="User information area test suite when user is defined" />
+        <test-name value="should display user account update date" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="me.component.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.spec.ts" />
-      <method v="2" />
-    </configuration>
-    <configuration name="not-found.component.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:5500/Yoga-app/front/src/app/components/not-found/not-found.component.html" useBuiltInWebServerPort="true">
+      <test-file value="$PROJECT_DIR$/front/src/app/components/me/me.component.spec.ts" />
       <method v="2" />
     </configuration>
     <configuration name="SpringBootSecurityJwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -177,21 +246,31 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/front/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.NotFoundComponent.should display a message &quot;Page not found !&quot;" />
-        <item itemvalue="Jest.NotFoundComponent" />
-        <item itemvalue="JavaScript Debug.not-found.component.html" />
-        <item itemvalue="Jest.not-found.component.spec.ts" />
-        <item itemvalue="Jest.NotFoundComponent.should display a &quot;Page not found !&quot; message" />
+        <item itemvalue="npm.test" />
+        <item itemvalue="Jest.me.component.spec.ts" />
+        <item itemvalue="Jest.MeComponent.No admin user information area test suite.should navigate to home page after user account is deleted" />
+        <item itemvalue="Jest.MeComponent.No admin user information area test suite.should logout user after user account is deleted" />
+        <item itemvalue="Jest.MeComponent.User information area test suite when user is defined.should display user account update date" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
       </set>
     </attachedChunks>
   </component>
@@ -222,7 +301,14 @@
       <workItem from="1739206981599" duration="407000" />
       <workItem from="1739207904069" duration="3904000" />
       <workItem from="1739214467811" duration="3000" />
-      <workItem from="1739257507348" duration="11884000" />
+      <workItem from="1739257507348" duration="31784000" />
+      <workItem from="1739300450375" duration="2209000" />
+      <workItem from="1739345091300" duration="7623000" />
+      <workItem from="1739353130813" duration="19447000" />
+      <workItem from="1739382490140" duration="1526000" />
+      <workItem from="1739430186886" duration="8679000" />
+      <workItem from="1739439362402" duration="1485000" />
+      <workItem from="1739440871636" duration="15506000" />
     </task>
     <task id="LOCAL-00001" summary="Some fixes to make the project work">
       <option name="closed" value="true" />
@@ -232,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738940971418</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="U.T. added for not-found.component">
+      <option name="closed" value="true" />
+      <created>1739272858539</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739272858539</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +345,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Some fixes to make the project work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some fixes to make the project work" />
+    <MESSAGE value="U.T. added for not-found.component" />
+    <MESSAGE value="U.T. added for me.component" />
+    <option name="LAST_COMMIT_MESSAGE" value="U.T. added for me.component" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -261,9 +357,16 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_should_call_the_UserService_getById_method.info" NAME="MeComponent.should call the UserService.getById method Coverage Results" MODIFIED="1739289574596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$Tests_in_not_found_.info" NAME="Tests in not-found\ Coverage Results" MODIFIED="1739276371739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_Back_button_test_suite_should_go_back_to_the_previous_page_when_back_button_is_clicked.info" NAME="MeComponent.Back button test suite.should go back to the previous page when back button is clicked Coverage Results" MODIFIED="1739357789446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$NotFoundComponent_should_create.info" NAME="NotFoundComponent.should create Coverage Results" MODIFIED="1739183857171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Yoga_app$me_component_spec_ts.info" NAME="me.component.spec.ts Coverage Results" MODIFIED="1738942225729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$me_component_spec_ts.info" NAME="me.component.spec.ts Coverage Results" MODIFIED="1739457607463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_No_admin_user_information_area_test_suite_should_delete_user_account_when_delete_button_is_clicked.info" NAME="MeComponent.No admin user information area test suite.should delete user account when delete button is clicked Coverage Results" MODIFIED="1739369704956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$Tests_in_login_.info" NAME="Tests in login\ Coverage Results" MODIFIED="1739184932330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$NotFoundComponent.info" NAME="NotFoundComponent Coverage Results" MODIFIED="1739211420344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_No_admin_user_information_area_test_suite_should_not_display_admin_status_when_user_is_not_an_admin.info" NAME="MeComponent.No admin user information area test suite.should not display admin status when user is not an admin Coverage Results" MODIFIED="1739362715757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$Tests_in_me_.info" NAME="Tests in me\ Coverage Results" MODIFIED="1739276391490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_should_return_a_mocked_user.info" NAME="MeComponent.should return a mocked user Coverage Results" MODIFIED="1739301714621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
