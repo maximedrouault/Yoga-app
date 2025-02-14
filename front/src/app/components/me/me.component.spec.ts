@@ -72,7 +72,6 @@ describe('MeComponent', () => {
 
     fixture = TestBed.createComponent(MeComponent);
     component = fixture.componentInstance;
-    // datePipe = TestBed.inject(DatePipe);
     fixture.detectChanges();
   });
 
