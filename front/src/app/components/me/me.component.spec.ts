@@ -6,7 +6,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 import {SessionService} from 'src/app/services/session.service';
-import {expect} from "@jest/globals";
+import {expect, it} from "@jest/globals";
 
 import {MeComponent} from './me.component';
 import {UserService} from "../../services/user.service";
@@ -42,13 +42,9 @@ describe('MeComponent', () => {
     delete: jest.fn().mockReturnValue(of(null))
   };
 
-  const mockMatSnackBar = {
-    open: jest.fn()
-  };
+  const mockMatSnackBar = { open: jest.fn() };
 
-  const mockRouter = {
-    navigate: jest.fn()
-  };
+  const mockRouter = { navigate: jest.fn() };
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({

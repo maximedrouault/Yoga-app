@@ -7,7 +7,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RouterTestingModule} from '@angular/router/testing';
-import {expect} from '@jest/globals';
+import {expect, it} from '@jest/globals';
 import {SessionService} from 'src/app/services/session.service';
 
 import {LoginComponent} from './login.component';
@@ -34,9 +34,7 @@ describe('LoginComponent', () => {
     login: jest.fn().mockReturnValue(of(mockSessionService.sessionInformation))
   }
 
-  const mockRouter = {
-    navigate: jest.fn()
-  }
+  const mockRouter = { navigate: jest.fn() }
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({

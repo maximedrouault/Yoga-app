@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="U.T. added for me.component">
+    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="U.T. added for login.component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/app/components/me/me.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/components/me/me.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/components/not-found/not-found.component.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/features/auth/components/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/auth/components/register/register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/features/auth/components/register/register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/auth/components/register/register.component.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +57,7 @@
   "keyToString": {
     "Cypress.all tests in login.cy.ts.executor": "Run",
     "JavaScript Debug.not-found.component.html.executor": "Run",
+    "Jest.LoginComponent.Login form submit test suite.addition de %i et %i donne %i.executor": "Run",
     "Jest.LoginComponent.Login form submit test suite.should call authService.login() when login form is valid.executor": "Run",
     "Jest.LoginComponent.Login form submit test suite.should call router.navigate() and redirect to /sessions once logged in.executor": "Run",
     "Jest.LoginComponent.Login form submit test suite.should call sessionService.logIn() and log user when login form is valid.executor": "Run",
@@ -134,6 +137,14 @@
     "Jest.NotFoundComponent.should create.executor": "Coverage",
     "Jest.NotFoundComponent.should display a \"Page not found !\" message.executor": "Run",
     "Jest.NotFoundComponent.should display a message \"Page not found !\".executor": "Run",
+    "Jest.RegisterComponent.Register form submit test suite.Register form invalid cases.should not call submit() when register form is invalid.executor": "Run",
+    "Jest.RegisterComponent.Register form submit test suite.Register form invalid cases.should not valid form when %i and %i.executor": "Run",
+    "Jest.RegisterComponent.Register form submit test suite.Register form invalid cases.should not valid form when a field requirement is not correct.executor": "Run",
+    "Jest.RegisterComponent.Register form submit test suite.should call authService.register() when register form is valid.executor": "Run",
+    "Jest.RegisterComponent.Register form submit test suite.should call submit() when register form is valid.executor": "Run",
+    "Jest.RegisterComponent.Register form submit test suite.should display error messages when form is invalid.executor": "Run",
+    "Jest.RegisterComponent.Register form submit test suite.should redirect to /login once registered.executor": "Run",
+    "Jest.RegisterComponent.Register form submit test suite.should set onError to true when register fails.executor": "Run",
     "Jest.SessionsService.should be created.executor": "Run",
     "Jest.SessionsService.should get all sessions.executor": "Run",
     "Jest.Tests in login\\.executor": "Coverage",
@@ -143,6 +154,7 @@
     "Jest.login.component.spec.ts.executor": "Run",
     "Jest.me.component.spec.ts.executor": "Run",
     "Jest.not-found.component.spec.ts.executor": "Run",
+    "Jest.register.component.spec.ts.executor": "Coverage",
     "Jest.session-api.service.spec.ts.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -187,65 +199,73 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.me.component.spec.ts">
-    <configuration name="LoginComponent.Login form submit test suite.should hide submit button when email is not in a valid format" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.RegisterComponent.Register form submit test suite.Register form invalid cases.should not valid form when a field requirement is not correct">
+    <configuration name="RegisterComponent.Register form submit test suite.Register form invalid cases.should not call submit() when register form is invalid" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/register/register.component.spec.ts" />
       <test-names>
-        <test-name value="LoginComponent" />
-        <test-name value="Login form submit test suite" />
-        <test-name value="should hide submit button when email is not in a valid format" />
+        <test-name value="RegisterComponent" />
+        <test-name value="Register form submit test suite" />
+        <test-name value="Register form invalid cases" />
+        <test-name value="should not call submit() when register form is invalid" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="LoginComponent.Login form submit test suite.should not submit form login when it is empty" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterComponent.Register form submit test suite.Register form invalid cases.should not valid form when %i and %i" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/register/register.component.spec.ts" />
       <test-names>
-        <test-name value="LoginComponent" />
-        <test-name value="Login form submit test suite" />
-        <test-name value="should not submit form login when it is empty" />
+        <test-name value="RegisterComponent" />
+        <test-name value="Register form submit test suite" />
+        <test-name value="Register form invalid cases" />
+        <test-name value="should not valid form when %i and %i" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="LoginComponent.Login form submit test suite.should not submit form login when it is not valid" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterComponent.Register form submit test suite.Register form invalid cases.should not valid form when a field requirement is not correct" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/register/register.component.spec.ts" />
       <test-names>
-        <test-name value="LoginComponent" />
-        <test-name value="Login form submit test suite" />
-        <test-name value="should not submit form login when it is not valid" />
+        <test-name value="RegisterComponent" />
+        <test-name value="Register form submit test suite" />
+        <test-name value="Register form invalid cases" />
+        <test-name value="should not valid form when a field requirement is not correct" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="login.component.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterComponent.Register form submit test suite.should display error messages when form is invalid" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
+      <working-dir value="$PROJECT_DIR$/front" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/register/register.component.spec.ts" />
+      <test-names>
+        <test-name value="RegisterComponent" />
+        <test-name value="Register form submit test suite" />
+        <test-name value="should display error messages when form is invalid" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="register.component.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" />
-      <method v="2" />
-    </configuration>
-    <configuration name="me.component.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
-      <working-dir value="$PROJECT_DIR$/front" />
-      <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/front/src/app/components/me/me.component.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/register/register.component.spec.ts" />
       <method v="2" />
     </configuration>
     <configuration name="SpringBootSecurityJwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -273,11 +293,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.me.component.spec.ts" />
-        <item itemvalue="Jest.LoginComponent.Login form submit test suite.should not submit form login when it is not valid" />
-        <item itemvalue="Jest.login.component.spec.ts" />
-        <item itemvalue="Jest.LoginComponent.Login form submit test suite.should not submit form login when it is empty" />
-        <item itemvalue="Jest.LoginComponent.Login form submit test suite.should hide submit button when email is not in a valid format" />
+        <item itemvalue="Jest.RegisterComponent.Register form submit test suite.Register form invalid cases.should not valid form when a field requirement is not correct" />
+        <item itemvalue="Jest.RegisterComponent.Register form submit test suite.Register form invalid cases.should not valid form when %i and %i" />
+        <item itemvalue="Jest.RegisterComponent.Register form submit test suite.Register form invalid cases.should not call submit() when register form is invalid" />
+        <item itemvalue="Jest.RegisterComponent.Register form submit test suite.should display error messages when form is invalid" />
+        <item itemvalue="Jest.register.component.spec.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +345,7 @@
       <workItem from="1739439362402" duration="1485000" />
       <workItem from="1739440871636" duration="20304000" />
       <workItem from="1739513962173" duration="671000" />
-      <workItem from="1739515035468" duration="12458000" />
+      <workItem from="1739515035468" duration="17746000" />
     </task>
     <task id="LOCAL-00001" summary="Some fixes to make the project work">
       <option name="closed" value="true" />
@@ -351,7 +371,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739458224091</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="U.T. added for login.component">
+      <option name="closed" value="true" />
+      <created>1739531262300</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739531262300</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +400,8 @@
     <MESSAGE value="Some fixes to make the project work" />
     <MESSAGE value="U.T. added for not-found.component" />
     <MESSAGE value="U.T. added for me.component" />
-    <option name="LAST_COMMIT_MESSAGE" value="U.T. added for me.component" />
+    <MESSAGE value="U.T. added for login.component" />
+    <option name="LAST_COMMIT_MESSAGE" value="U.T. added for login.component" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -385,7 +414,7 @@
     <SUITE FILE_PATH="coverage/Yoga_app$Tests_in_not_found_.info" NAME="Tests in not-found\ Coverage Results" MODIFIED="1739276371739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$LoginComponent_Login_form_submit_test_suite_should_send_login_request_when_login_and_password_are_valid.info" NAME="LoginComponent.Login form submit test suite.should send login request when login and password are valid Coverage Results" MODIFIED="1739518616142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$me_component_spec_ts.info" NAME="me.component.spec.ts Coverage Results" MODIFIED="1739457607463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Yoga_app$login_component_spec_ts.info" NAME="login.component.spec.ts Coverage Results" MODIFIED="1739528023311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$login_component_spec_ts.info" NAME="login.component.spec.ts Coverage Results" MODIFIED="1739531219747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$LoginComponent_should_create.info" NAME="LoginComponent.should create Coverage Results" MODIFIED="1739516588536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_should_return_a_mocked_user.info" NAME="MeComponent.should return a mocked user Coverage Results" MODIFIED="1739301714621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_should_call_the_UserService_getById_method.info" NAME="MeComponent.should call the UserService.getById method Coverage Results" MODIFIED="1739289574596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -393,6 +422,7 @@
     <SUITE FILE_PATH="coverage/Yoga_app$list_component_spec_ts.info" NAME="list.component.spec.ts Coverage Results" MODIFIED="1739458439331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$NotFoundComponent_should_create.info" NAME="NotFoundComponent.should create Coverage Results" MODIFIED="1739183857171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_No_admin_user_information_area_test_suite_should_delete_user_account_when_delete_button_is_clicked.info" NAME="MeComponent.No admin user information area test suite.should delete user account when delete button is clicked Coverage Results" MODIFIED="1739369704956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$register_component_spec_ts.info" NAME="register.component.spec.ts Coverage Results" MODIFIED="1739539367520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$Tests_in_login_.info" NAME="Tests in login\ Coverage Results" MODIFIED="1739184932330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$NotFoundComponent.info" NAME="NotFoundComponent Coverage Results" MODIFIED="1739211420344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_No_admin_user_information_area_test_suite_should_not_display_admin_status_when_user_is_not_an_admin.info" NAME="MeComponent.No admin user information area test suite.should not display admin status when user is not an admin Coverage Results" MODIFIED="1739362715757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
