@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="U.T. added for list.component and refactor">
+    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="U.T. added for login.component to handle navigation failure after successful login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +75,7 @@
     "Jest.LoginComponent.Login form submit test suite.should redirect to /sessions once logged in.executor": "Run",
     "Jest.LoginComponent.Login form submit test suite.should send login request when login and password are valid.executor": "Run",
     "Jest.LoginComponent.Login form submit test suite.should set onError to true when login fails.executor": "Coverage",
-    "Jest.LoginComponent.Login form submit test suite.should set onError to true when navigation fails after successful login.executor": "Run",
+    "Jest.LoginComponent.Login form submit test suite.should set onError to true when navigation fails after successful login.executor": "Coverage",
     "Jest.LoginComponent.Login form submit test suite.should test.executor": "Run",
     "Jest.LoginComponent.should create.executor": "Run",
     "Jest.MeComponent.Admin user information area test suite.executor": "Run",
@@ -208,21 +207,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.LoginComponent.Login form submit test suite.should set onError to true when navigation fails after successful login">
-    <configuration name="LoginComponent.Login form submit test suite.should not set onError to true when navigation succeeds after successful login" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
-      <working-dir value="$PROJECT_DIR$/front" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" />
-      <test-names>
-        <test-name value="LoginComponent" />
-        <test-name value="Login form submit test suite" />
-        <test-name value="should not set onError to true when navigation succeeds after successful login" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Jest.register.component.spec.ts">
     <configuration name="LoginComponent.Login form submit test suite.should set onError to true when login fails" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
@@ -274,6 +259,15 @@
       <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" />
       <method v="2" />
     </configuration>
+    <configuration name="register.component.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
+      <working-dir value="$PROJECT_DIR$/front" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/register/register.component.spec.ts" />
+      <method v="2" />
+    </configuration>
     <configuration name="SpringBootSecurityJwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="back" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.openclassrooms.starterjwt.SpringBootSecurityJwtApplication" />
@@ -299,11 +293,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.register.component.spec.ts" />
+        <item itemvalue="Jest.login.component.spec.ts" />
         <item itemvalue="Jest.LoginComponent.Login form submit test suite.should set onError to true when navigation fails after successful login" />
         <item itemvalue="Jest.LoginComponent.Login form submit test suite.should set onError to true when login fails" />
-        <item itemvalue="Jest.login.component.spec.ts" />
         <item itemvalue="Jest.LoginComponent.Login form submit test suite.should " />
-        <item itemvalue="Jest.LoginComponent.Login form submit test suite.should not set onError to true when navigation succeeds after successful login" />
       </list>
     </recent_temporary>
   </component>
@@ -354,7 +348,7 @@
       <workItem from="1739515035468" duration="25614000" />
       <workItem from="1739613939682" duration="90000" />
       <workItem from="1739614124626" duration="3477000" />
-      <workItem from="1739626737017" duration="3033000" />
+      <workItem from="1739626737017" duration="3821000" />
     </task>
     <task id="LOCAL-00001" summary="Some fixes to make the project work">
       <option name="closed" value="true" />
@@ -404,7 +398,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739625932494</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="U.T. added for login.component to handle navigation failure after successful login">
+      <option name="closed" value="true" />
+      <created>1739630066513</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1739630066513</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +430,8 @@
     <MESSAGE value="U.T. added for login.component" />
     <MESSAGE value="U.T. added for register.component" />
     <MESSAGE value="U.T. added for list.component and refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="U.T. added for list.component and refactor" />
+    <MESSAGE value="U.T. added for login.component to handle navigation failure after successful login" />
+    <option name="LAST_COMMIT_MESSAGE" value="U.T. added for login.component to handle navigation failure after successful login" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -442,8 +445,8 @@
     <SUITE FILE_PATH="coverage/Yoga_app$LoginComponent_Login_form_submit_test_suite_should_send_login_request_when_login_and_password_are_valid.info" NAME="LoginComponent.Login form submit test suite.should send login request when login and password are valid Coverage Results" MODIFIED="1739518616142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$LoginComponent_Login_form_submit_test_suite_should_set_onError_to_true_when_login_fails.info" NAME="LoginComponent.Login form submit test suite.should set onError to true when login fails Coverage Results" MODIFIED="1739629511835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$me_component_spec_ts.info" NAME="me.component.spec.ts Coverage Results" MODIFIED="1739457607463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Yoga_app$LoginComponent_Login_form_submit_test_suite_should_set_onError_to_true_when_navigation_fails_after_successful_login.info" NAME="LoginComponent.Login form submit test suite.should set onError to true when navigation fails after successful login Coverage Results" MODIFIED="1739629631577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Yoga_app$login_component_spec_ts.info" NAME="login.component.spec.ts Coverage Results" MODIFIED="1739629439711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$LoginComponent_Login_form_submit_test_suite_should_set_onError_to_true_when_navigation_fails_after_successful_login.info" NAME="LoginComponent.Login form submit test suite.should set onError to true when navigation fails after successful login Coverage Results" MODIFIED="1739629969677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$login_component_spec_ts.info" NAME="login.component.spec.ts Coverage Results" MODIFIED="1739630012067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$LoginComponent_should_create.info" NAME="LoginComponent.should create Coverage Results" MODIFIED="1739516588536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_should_return_a_mocked_user.info" NAME="MeComponent.should return a mocked user Coverage Results" MODIFIED="1739301714621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_should_call_the_UserService_getById_method.info" NAME="MeComponent.should call the UserService.getById method Coverage Results" MODIFIED="1739289574596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

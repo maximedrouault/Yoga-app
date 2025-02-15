@@ -114,6 +114,16 @@ describe('RegisterComponent', () => {
       expect(component.onError).toBeTruthy();
     });
 
+    it('should set onError to true when navigation fails after successful login', async () => {
+      mockAuthService.register.mockReturnValue(of(null));
+      mockRouter.navigate.mockReturnValue(Promise.reject(new Error('Navigation failed')));
+
+      fillFormAndSubmit(validRegisterRequest);
+
+      await fixture.whenStable();
+      expect(component.onError).toBeTruthy();
+    });
+
 
     describe('Register form invalid cases', () => {
       it.each([
