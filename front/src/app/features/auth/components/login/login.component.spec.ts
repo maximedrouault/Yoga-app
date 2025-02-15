@@ -119,6 +119,16 @@ describe('LoginComponent', () => {
       expect(component.onError).toBeTruthy();
     });
 
+    it('should set onError to true when navigation fails after successful login', async () => {
+      mockAuthService.login.mockReturnValue(of(mockSessionService.sessionInformation));
+      mockRouter.navigate.mockReturnValue(Promise.reject(new Error('Navigation failed')));
+
+      fillFormAndSubmit(validLoginRequest);
+
+      await fixture.whenStable();
+      expect(component.onError).toBeTruthy();
+    });
+
     it('should not submit form login when it is not valid', () => {
       const submitSpy: SpyInstance = jest.spyOn(component, 'submit');
 

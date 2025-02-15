@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="U.T. added for list.component and refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/features/auth/components/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/auth/components/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/features/sessions/components/list/list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/sessions/components/list/list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/features/sessions/components/list/list.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/sessions/components/list/list.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/features/sessions/components/list/list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/sessions/components/list/list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/features/sessions/services/session-api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/sessions/services/session-api.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/services/session.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/services/session.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +17,9 @@
     <option name="groupingKeys">
       <option value="module" />
     </option>
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,6 +43,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -64,16 +64,19 @@
     "Jest.ListComponent.should not display create button if user is not admin.executor": "Run",
     "Jest.ListComponent.should not display edit button for sessions if user is not admin.executor": "Run",
     "Jest.LoginComponent.Login form submit test suite.addition de %i et %i donne %i.executor": "Run",
+    "Jest.LoginComponent.Login form submit test suite.should .executor": "Run",
     "Jest.LoginComponent.Login form submit test suite.should call authService.login() when login form is valid.executor": "Run",
     "Jest.LoginComponent.Login form submit test suite.should call router.navigate() and redirect to /sessions once logged in.executor": "Run",
     "Jest.LoginComponent.Login form submit test suite.should call sessionService.logIn() and log user when login form is valid.executor": "Run",
     "Jest.LoginComponent.Login form submit test suite.should call sessionService.logIn() when login form is valid.executor": "Run",
     "Jest.LoginComponent.Login form submit test suite.should hide submit button when email is not in a valid format.executor": "Run",
+    "Jest.LoginComponent.Login form submit test suite.should not set onError to true when navigation succeeds after successful login.executor": "Run",
     "Jest.LoginComponent.Login form submit test suite.should not submit form login when it is empty.executor": "Run",
     "Jest.LoginComponent.Login form submit test suite.should not submit form login when it is not valid.executor": "Run",
     "Jest.LoginComponent.Login form submit test suite.should redirect to /sessions once logged in.executor": "Run",
     "Jest.LoginComponent.Login form submit test suite.should send login request when login and password are valid.executor": "Run",
-    "Jest.LoginComponent.Login form submit test suite.should set onError to true when login fails.executor": "Run",
+    "Jest.LoginComponent.Login form submit test suite.should set onError to true when login fails.executor": "Coverage",
+    "Jest.LoginComponent.Login form submit test suite.should set onError to true when navigation fails after successful login.executor": "Run",
     "Jest.LoginComponent.Login form submit test suite.should test.executor": "Run",
     "Jest.LoginComponent.should create.executor": "Run",
     "Jest.MeComponent.Admin user information area test suite.executor": "Run",
@@ -157,7 +160,7 @@
     "Jest.Tests in me\\.executor": "Coverage",
     "Jest.Tests in not-found\\.executor": "Coverage",
     "Jest.list.component.spec.ts.executor": "Coverage",
-    "Jest.login.component.spec.ts.executor": "Run",
+    "Jest.login.component.spec.ts.executor": "Coverage",
     "Jest.me.component.spec.ts.executor": "Run",
     "Jest.not-found.component.spec.ts.executor": "Run",
     "Jest.register.component.spec.ts.executor": "Coverage",
@@ -205,66 +208,70 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.list.component.spec.ts">
-    <configuration name="ListComponent.should display create button if user is admin" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.LoginComponent.Login form submit test suite.should set onError to true when navigation fails after successful login">
+    <configuration name="LoginComponent.Login form submit test suite.should not set onError to true when navigation succeeds after successful login" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/features/sessions/components/list/list.component.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" />
       <test-names>
-        <test-name value="ListComponent" />
-        <test-name value="should display create button if user is admin" />
+        <test-name value="LoginComponent" />
+        <test-name value="Login form submit test suite" />
+        <test-name value="should not set onError to true when navigation succeeds after successful login" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="ListComponent.should display edit button for each session if user is admin" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginComponent.Login form submit test suite.should set onError to true when login fails" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/features/sessions/components/list/list.component.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" />
       <test-names>
-        <test-name value="ListComponent" />
-        <test-name value="should display edit button for each session if user is admin" />
+        <test-name value="LoginComponent" />
+        <test-name value="Login form submit test suite" />
+        <test-name value="should set onError to true when login fails" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="ListComponent.should not display create button if user is not admin" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginComponent.Login form submit test suite.should set onError to true when navigation fails after successful login" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/features/sessions/components/list/list.component.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" />
       <test-names>
-        <test-name value="ListComponent" />
-        <test-name value="should not display create button if user is not admin" />
+        <test-name value="LoginComponent" />
+        <test-name value="Login form submit test suite" />
+        <test-name value="should set onError to true when navigation fails after successful login" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="ListComponent.should not display edit button for sessions if user is not admin" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginComponent.Login form submit test suite.should " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/features/sessions/components/list/list.component.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" />
       <test-names>
-        <test-name value="ListComponent" />
-        <test-name value="should not display edit button for sessions if user is not admin" />
+        <test-name value="LoginComponent" />
+        <test-name value="Login form submit test suite" />
+        <test-name value="should " />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="list.component.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="login.component.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/front/src/app/features/sessions/components/list/list.component.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.spec.ts" />
       <method v="2" />
     </configuration>
     <configuration name="SpringBootSecurityJwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -292,11 +299,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.list.component.spec.ts" />
-        <item itemvalue="Jest.ListComponent.should not display create button if user is not admin" />
-        <item itemvalue="Jest.ListComponent.should not display edit button for sessions if user is not admin" />
-        <item itemvalue="Jest.ListComponent.should display edit button for each session if user is admin" />
-        <item itemvalue="Jest.ListComponent.should display create button if user is admin" />
+        <item itemvalue="Jest.LoginComponent.Login form submit test suite.should set onError to true when navigation fails after successful login" />
+        <item itemvalue="Jest.LoginComponent.Login form submit test suite.should set onError to true when login fails" />
+        <item itemvalue="Jest.login.component.spec.ts" />
+        <item itemvalue="Jest.LoginComponent.Login form submit test suite.should " />
+        <item itemvalue="Jest.LoginComponent.Login form submit test suite.should not set onError to true when navigation succeeds after successful login" />
       </list>
     </recent_temporary>
   </component>
@@ -346,7 +353,8 @@
       <workItem from="1739513962173" duration="671000" />
       <workItem from="1739515035468" duration="25614000" />
       <workItem from="1739613939682" duration="90000" />
-      <workItem from="1739614124626" duration="2341000" />
+      <workItem from="1739614124626" duration="3477000" />
+      <workItem from="1739626737017" duration="3033000" />
     </task>
     <task id="LOCAL-00001" summary="Some fixes to make the project work">
       <option name="closed" value="true" />
@@ -388,7 +396,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739541131847</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="U.T. added for list.component and refactor">
+      <option name="closed" value="true" />
+      <created>1739625932494</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739625932494</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,10 +438,12 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Yoga_app$LoginComponent_Login_form_submit_test_suite_should_send_login_request_when_login_and_password_are_valid.info" NAME="LoginComponent.Login form submit test suite.should send login request when login and password are valid Coverage Results" MODIFIED="1739518616142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$Tests_in_not_found_.info" NAME="Tests in not-found\ Coverage Results" MODIFIED="1739276371739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$LoginComponent_Login_form_submit_test_suite_should_send_login_request_when_login_and_password_are_valid.info" NAME="LoginComponent.Login form submit test suite.should send login request when login and password are valid Coverage Results" MODIFIED="1739518616142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$LoginComponent_Login_form_submit_test_suite_should_set_onError_to_true_when_login_fails.info" NAME="LoginComponent.Login form submit test suite.should set onError to true when login fails Coverage Results" MODIFIED="1739629511835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$me_component_spec_ts.info" NAME="me.component.spec.ts Coverage Results" MODIFIED="1739457607463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Yoga_app$login_component_spec_ts.info" NAME="login.component.spec.ts Coverage Results" MODIFIED="1739531219747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$LoginComponent_Login_form_submit_test_suite_should_set_onError_to_true_when_navigation_fails_after_successful_login.info" NAME="LoginComponent.Login form submit test suite.should set onError to true when navigation fails after successful login Coverage Results" MODIFIED="1739629631577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$login_component_spec_ts.info" NAME="login.component.spec.ts Coverage Results" MODIFIED="1739629439711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$LoginComponent_should_create.info" NAME="LoginComponent.should create Coverage Results" MODIFIED="1739516588536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_should_return_a_mocked_user.info" NAME="MeComponent.should return a mocked user Coverage Results" MODIFIED="1739301714621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_should_call_the_UserService_getById_method.info" NAME="MeComponent.should call the UserService.getById method Coverage Results" MODIFIED="1739289574596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
