@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="U.T. added for session-api.service to handle session operations, improving test coverage">
-      <change afterPath="$PROJECT_DIR$/front/src/app/features/auth/services/auth.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/features/auth/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/auth/services/auth.service.ts" afterDir="false" />
+    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="U.T. added for auth.service to handle user registration and login, improving test coverage">
+      <change beforePath="$PROJECT_DIR$/front/src/app/services/user.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/services/user.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/services/user.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,6 +191,10 @@
     "Jest.Tests in login\\.executor": "Coverage",
     "Jest.Tests in me\\.executor": "Coverage",
     "Jest.Tests in not-found\\.executor": "Coverage",
+    "Jest.UserService.UserService test suite.should delete user by id.executor": "Run",
+    "Jest.UserService.UserService test suite.should handle error when deleting user by id.executor": "Run",
+    "Jest.UserService.UserService test suite.should handle error when retrieving user by id.executor": "Run",
+    "Jest.UserService.UserService test suite.should retrieve user by id.executor": "Coverage",
     "Jest.auth.service.spec.ts.executor": "Coverage",
     "Jest.detail.component.spec.ts.executor": "Coverage",
     "Jest.form.component.spec.ts.executor": "Run",
@@ -201,6 +204,7 @@
     "Jest.not-found.component.spec.ts.executor": "Run",
     "Jest.register.component.spec.ts.executor": "Coverage",
     "Jest.session-api.service.spec.ts.executor": "Coverage",
+    "Jest.user.service.spec.ts.executor": "Coverage",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -244,66 +248,70 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.auth.service.spec.ts">
-    <configuration name="AuthService.should handle login error" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.user.service.spec.ts">
+    <configuration name="UserService.UserService test suite.should delete user by id" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/services/auth.service.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/services/user.service.spec.ts" />
       <test-names>
-        <test-name value="AuthService" />
-        <test-name value="should handle login error" />
+        <test-name value="UserService" />
+        <test-name value="UserService test suite" />
+        <test-name value="should delete user by id" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="AuthService.should handle register error" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="UserService.UserService test suite.should handle error when deleting user by id" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/services/auth.service.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/services/user.service.spec.ts" />
       <test-names>
-        <test-name value="AuthService" />
-        <test-name value="should handle register error" />
+        <test-name value="UserService" />
+        <test-name value="UserService test suite" />
+        <test-name value="should handle error when deleting user by id" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="AuthService.should login a user successfully" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="UserService.UserService test suite.should handle error when retrieving user by id" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/services/auth.service.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/services/user.service.spec.ts" />
       <test-names>
-        <test-name value="AuthService" />
-        <test-name value="should login a user successfully" />
+        <test-name value="UserService" />
+        <test-name value="UserService test suite" />
+        <test-name value="should handle error when retrieving user by id" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="AuthService.should register a user successfully" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="UserService.UserService test suite.should retrieve user by id" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/services/auth.service.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/services/user.service.spec.ts" />
       <test-names>
-        <test-name value="AuthService" />
-        <test-name value="should register a user successfully" />
+        <test-name value="UserService" />
+        <test-name value="UserService test suite" />
+        <test-name value="should retrieve user by id" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="auth.service.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="user.service.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/front/src/app/features/auth/services/auth.service.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/services/user.service.spec.ts" />
       <method v="2" />
     </configuration>
     <configuration name="SpringBootSecurityJwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -331,11 +339,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.auth.service.spec.ts" />
-        <item itemvalue="Jest.AuthService.should handle login error" />
-        <item itemvalue="Jest.AuthService.should handle register error" />
-        <item itemvalue="Jest.AuthService.should login a user successfully" />
-        <item itemvalue="Jest.AuthService.should register a user successfully" />
+        <item itemvalue="Jest.user.service.spec.ts" />
+        <item itemvalue="Jest.UserService.UserService test suite.should handle error when deleting user by id" />
+        <item itemvalue="Jest.UserService.UserService test suite.should delete user by id" />
+        <item itemvalue="Jest.UserService.UserService test suite.should handle error when retrieving user by id" />
+        <item itemvalue="Jest.UserService.UserService test suite.should retrieve user by id" />
       </list>
     </recent_temporary>
   </component>
@@ -388,7 +396,7 @@
       <workItem from="1739614124626" duration="3477000" />
       <workItem from="1739626737017" duration="6446000" />
       <workItem from="1739726744487" duration="2191000" />
-      <workItem from="1739779160625" duration="21979000" />
+      <workItem from="1739779160625" duration="23412000" />
     </task>
     <task id="LOCAL-00001" summary="Some fixes to make the project work">
       <option name="closed" value="true" />
@@ -478,7 +486,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739807642809</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="U.T. added for auth.service to handle user registration and login, improving test coverage">
+      <option name="closed" value="true" />
+      <created>1739809288271</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1739809288271</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,7 +523,8 @@
     <MESSAGE value="U.T. added for detail.component to handle session operations and improve test coverage" />
     <MESSAGE value="U.T. added for form.component to handle session creation and update, improving test coverage" />
     <MESSAGE value="U.T. added for session-api.service to handle session operations, improving test coverage" />
-    <option name="LAST_COMMIT_MESSAGE" value="U.T. added for session-api.service to handle session operations, improving test coverage" />
+    <MESSAGE value="U.T. added for auth.service to handle user registration and login, improving test coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="U.T. added for auth.service to handle user registration and login, improving test coverage" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -546,12 +563,14 @@
     <SUITE FILE_PATH="coverage/Yoga_app$auth_service_spec_ts.info" NAME="auth.service.spec.ts Coverage Results" MODIFIED="1739809097250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$DetailComponent_Detail_component_test_suite_should_delete_session.info" NAME="DetailComponent.Detail component test suite.should delete session Coverage Results" MODIFIED="1739797408897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$form_component_spec_ts.info" NAME="form.component.spec.ts Coverage Results" MODIFIED="1739804321410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$user_service_spec_ts.info" NAME="user.service.spec.ts Coverage Results" MODIFIED="1739810556168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_Back_button_test_suite_should_go_back_to_the_previous_page_when_back_button_is_clicked.info" NAME="MeComponent.Back button test suite.should go back to the previous page when back button is clicked Coverage Results" MODIFIED="1739357789446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$DetailComponent_Detail_component_test_suite_should_handle_teacher_not_found.info" NAME="DetailComponent.Detail component test suite.should handle teacher not found Coverage Results" MODIFIED="1739798089570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$DetailComponent_Detail_component_test_suite_should_unParticipate_from_session.info" NAME="DetailComponent.Detail component test suite.should unParticipate from session Coverage Results" MODIFIED="1739789166973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$NotFoundComponent_should_create.info" NAME="NotFoundComponent.should create Coverage Results" MODIFIED="1739183857171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$DetailComponent_Detail_component_test_suite_should_handle_session_not_found.info" NAME="DetailComponent.Detail component test suite.should handle session not found Coverage Results" MODIFIED="1739797875602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$SessionsService_SessionApiService_test_suite_should_retrieve_all_sessions.info" NAME="SessionsService.SessionApiService test suite.should retrieve all sessions Coverage Results" MODIFIED="1739806031509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$UserService_UserService_test_suite_should_retrieve_user_by_id.info" NAME="UserService.UserService test suite.should retrieve user by id Coverage Results" MODIFIED="1739809888109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_No_admin_user_information_area_test_suite_should_not_display_admin_status_when_user_is_not_an_admin.info" NAME="MeComponent.No admin user information area test suite.should not display admin status when user is not an admin Coverage Results" MODIFIED="1739362715757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
