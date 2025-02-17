@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="U.T. added for teacher.service to handle teacher retrieval and error management, improving test coverage">
-      <change beforePath="$PROJECT_DIR$/front/src/app/services/session.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/services/session.service.spec.ts" afterDir="false" />
+    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="U.T. added for session.service to handle user login and logout functionality, improving test coverage">
+      <change beforePath="$PROJECT_DIR$/front/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/app.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +59,9 @@
   "keyToString": {
     "Cypress.all tests in login.cy.ts.executor": "Run",
     "JavaScript Debug.not-found.component.html.executor": "Run",
+    "Jest.AppComponent.AppComponent test suite.should log out and navigate to home.executor": "Coverage",
+    "Jest.AppComponent.AppComponent test suite.should return false when user is not logged in.executor": "Coverage",
+    "Jest.AppComponent.AppComponent test suite.should return true when user is logged in.executor": "Coverage",
     "Jest.AuthService.should handle login error.executor": "Run",
     "Jest.AuthService.should handle register error.executor": "Run",
     "Jest.AuthService.should login a user successfully.executor": "Run",
@@ -202,6 +206,7 @@
     "Jest.UserService.UserService test suite.should handle error when deleting user by id.executor": "Run",
     "Jest.UserService.UserService test suite.should handle error when retrieving user by id.executor": "Run",
     "Jest.UserService.UserService test suite.should retrieve user by id.executor": "Coverage",
+    "Jest.app.component.spec.ts.executor": "Coverage",
     "Jest.auth.service.spec.ts.executor": "Coverage",
     "Jest.detail.component.spec.ts.executor": "Coverage",
     "Jest.form.component.spec.ts.executor": "Run",
@@ -257,61 +262,56 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.session.service.spec.ts">
-    <configuration name="SessionService.SessionService test suite.should emit false when user logs out" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.app.component.spec.ts">
+    <configuration name="AppComponent.AppComponent test suite.should log out and navigate to home" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/services/session.service.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/app.component.spec.ts" />
       <test-names>
-        <test-name value="SessionService" />
-        <test-name value="SessionService test suite" />
-        <test-name value="should emit false when user logs out" />
+        <test-name value="AppComponent" />
+        <test-name value="AppComponent test suite" />
+        <test-name value="should log out and navigate to home" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="SessionService.SessionService test suite.should emit true when user logs in" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="AppComponent.AppComponent test suite.should return false when user is not logged in" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/services/session.service.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/app.component.spec.ts" />
       <test-names>
-        <test-name value="SessionService" />
-        <test-name value="SessionService test suite" />
-        <test-name value="should emit true when user logs in" />
+        <test-name value="AppComponent" />
+        <test-name value="AppComponent test suite" />
+        <test-name value="should return false when user is not logged in" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="SessionService.SessionService test suite.should log in a user" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="AppComponent.AppComponent test suite.should return true when user is logged in" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/services/session.service.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/app.component.spec.ts" />
       <test-names>
-        <test-name value="SessionService" />
-        <test-name value="SessionService test suite" />
-        <test-name value="should log in a user" />
+        <test-name value="AppComponent" />
+        <test-name value="AppComponent test suite" />
+        <test-name value="should return true when user is logged in" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="SessionService.SessionService test suite.should log out a user" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="app.component.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/services/session.service.spec.ts" />
-      <test-names>
-        <test-name value="SessionService" />
-        <test-name value="SessionService test suite" />
-        <test-name value="should log out a user" />
-      </test-names>
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/front/src/app/app.component.spec.ts" />
       <method v="2" />
     </configuration>
     <configuration name="session.service.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
@@ -348,11 +348,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.app.component.spec.ts" />
+        <item itemvalue="Jest.AppComponent.AppComponent test suite.should log out and navigate to home" />
+        <item itemvalue="Jest.AppComponent.AppComponent test suite.should return false when user is not logged in" />
+        <item itemvalue="Jest.AppComponent.AppComponent test suite.should return true when user is logged in" />
         <item itemvalue="Jest.session.service.spec.ts" />
-        <item itemvalue="Jest.SessionService.SessionService test suite.should emit false when user logs out" />
-        <item itemvalue="Jest.SessionService.SessionService test suite.should emit true when user logs in" />
-        <item itemvalue="Jest.SessionService.SessionService test suite.should log out a user" />
-        <item itemvalue="Jest.SessionService.SessionService test suite.should log in a user" />
       </list>
     </recent_temporary>
   </component>
@@ -405,7 +405,7 @@
       <workItem from="1739614124626" duration="3477000" />
       <workItem from="1739626737017" duration="6446000" />
       <workItem from="1739726744487" duration="2191000" />
-      <workItem from="1739779160625" duration="24779000" />
+      <workItem from="1739779160625" duration="25662000" />
     </task>
     <task id="LOCAL-00001" summary="Some fixes to make the project work">
       <option name="closed" value="true" />
@@ -519,7 +519,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739811495948</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="U.T. added for session.service to handle user login and logout functionality, improving test coverage">
+      <option name="closed" value="true" />
+      <created>1739812030133</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1739812030133</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,7 +559,8 @@
     <MESSAGE value="U.T. added for auth.service to handle user registration and login, improving test coverage" />
     <MESSAGE value="U.T. added for user.service to handle user retrieval and deletion, improving test coverage" />
     <MESSAGE value="U.T. added for teacher.service to handle teacher retrieval and error management, improving test coverage" />
-    <option name="LAST_COMMIT_MESSAGE" value="U.T. added for teacher.service to handle teacher retrieval and error management, improving test coverage" />
+    <MESSAGE value="U.T. added for session.service to handle user login and logout functionality, improving test coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="U.T. added for session.service to handle user login and logout functionality, improving test coverage" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -582,23 +591,27 @@
     <SUITE FILE_PATH="coverage/Yoga_app$SessionService_SessionService_test_suite_should_emit_true_when_user_logs_in.info" NAME="SessionService.SessionService test suite.should emit true when user logs in Coverage Results" MODIFIED="1739811840131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$Tests_in_login_.info" NAME="Tests in login\ Coverage Results" MODIFIED="1739184932330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$DetailComponent_Detail_component_test_suite_should_participate_in_session.info" NAME="DetailComponent.Detail component test suite.should participate in session Coverage Results" MODIFIED="1739789142388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$AppComponent_AppComponent_test_suite_should_return_true_when_user_is_logged_in.info" NAME="AppComponent.AppComponent test suite.should return true when user is logged in Coverage Results" MODIFIED="1739812716214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$NotFoundComponent.info" NAME="NotFoundComponent Coverage Results" MODIFIED="1739211420344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$FormComponent_formSession_test_suite_should_initialize_form_in_create_mode.info" NAME="FormComponent.formSession test suite.should initialize form in create mode Coverage Results" MODIFIED="1739799281378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$FormComponent_formSession_test_suite_should_initialize_form_in_update_mode.info" NAME="FormComponent.formSession test suite.should initialize form in update mode Coverage Results" MODIFIED="1739800256698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$FormComponent_formSession_test_suite_should_update_an_existing_session_on_submit.info" NAME="FormComponent.formSession test suite.should update an existing session on submit Coverage Results" MODIFIED="1739803788161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$Tests_in_me_.info" NAME="Tests in me\ Coverage Results" MODIFIED="1739276391490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$AppComponent_AppComponent_test_suite_should_return_false_when_user_is_not_logged_in.info" NAME="AppComponent.AppComponent test suite.should return false when user is not logged in Coverage Results" MODIFIED="1739812757108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$Tests_in_not_found_.info" NAME="Tests in not-found\ Coverage Results" MODIFIED="1739276371739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$detail_component_spec_ts.info" NAME="detail.component.spec.ts Coverage Results" MODIFIED="1739798615426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$AppComponent_AppComponent_test_suite_should_log_out_and_navigate_to_home.info" NAME="AppComponent.AppComponent test suite.should log out and navigate to home Coverage Results" MODIFIED="1739812819206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$auth_service_spec_ts.info" NAME="auth.service.spec.ts Coverage Results" MODIFIED="1739809097250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$DetailComponent_Detail_component_test_suite_should_delete_session.info" NAME="DetailComponent.Detail component test suite.should delete session Coverage Results" MODIFIED="1739797408897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$form_component_spec_ts.info" NAME="form.component.spec.ts Coverage Results" MODIFIED="1739804321410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$app_component_spec_ts.info" NAME="app.component.spec.ts Coverage Results" MODIFIED="1739812843952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$user_service_spec_ts.info" NAME="user.service.spec.ts Coverage Results" MODIFIED="1739810556168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_Back_button_test_suite_should_go_back_to_the_previous_page_when_back_button_is_clicked.info" NAME="MeComponent.Back button test suite.should go back to the previous page when back button is clicked Coverage Results" MODIFIED="1739357789446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$DetailComponent_Detail_component_test_suite_should_handle_teacher_not_found.info" NAME="DetailComponent.Detail component test suite.should handle teacher not found Coverage Results" MODIFIED="1739798089570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$DetailComponent_Detail_component_test_suite_should_unParticipate_from_session.info" NAME="DetailComponent.Detail component test suite.should unParticipate from session Coverage Results" MODIFIED="1739789166973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$NotFoundComponent_should_create.info" NAME="NotFoundComponent.should create Coverage Results" MODIFIED="1739183857171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$DetailComponent_Detail_component_test_suite_should_handle_session_not_found.info" NAME="DetailComponent.Detail component test suite.should handle session not found Coverage Results" MODIFIED="1739797875602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Yoga_app$session_service_spec_ts.info" NAME="session.service.spec.ts Coverage Results" MODIFIED="1739811940325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Yoga_app$session_service_spec_ts.info" NAME="session.service.spec.ts Coverage Results" MODIFIED="1739812016863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$SessionsService_SessionApiService_test_suite_should_retrieve_all_sessions.info" NAME="SessionsService.SessionApiService test suite.should retrieve all sessions Coverage Results" MODIFIED="1739806031509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$UserService_UserService_test_suite_should_retrieve_user_by_id.info" NAME="UserService.UserService test suite.should retrieve user by id Coverage Results" MODIFIED="1739809888109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$MeComponent_No_admin_user_information_area_test_suite_should_not_display_admin_status_when_user_is_not_an_admin.info" NAME="MeComponent.No admin user information area test suite.should not display admin status when user is not an admin Coverage Results" MODIFIED="1739362715757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
