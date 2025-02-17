@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="U.T. added for auth.service to handle user registration and login, improving test coverage">
-      <change beforePath="$PROJECT_DIR$/front/src/app/services/user.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/services/user.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/services/user.service.ts" afterDir="false" />
+    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="U.T. added for user.service to handle user retrieval and deletion, improving test coverage">
+      <change beforePath="$PROJECT_DIR$/front/src/app/services/teacher.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/services/teacher.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/services/teacher.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/services/teacher.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +188,10 @@
     "Jest.SessionsService.SessionApiService test suite.should update an existing session.executor": "Run",
     "Jest.SessionsService.should be created.executor": "Run",
     "Jest.SessionsService.should get all sessions.executor": "Run",
+    "Jest.TeacherService.TeacherService test suite.should handle error when retrieving all teachers.executor": "Run",
+    "Jest.TeacherService.TeacherService test suite.should handle error when retrieving teacher details by id.executor": "Run",
+    "Jest.TeacherService.TeacherService test suite.should retrieve all teachers.executor": "Run",
+    "Jest.TeacherService.TeacherService test suite.should retrieve teacher.executor": "Run",
     "Jest.Tests in login\\.executor": "Coverage",
     "Jest.Tests in me\\.executor": "Coverage",
     "Jest.Tests in not-found\\.executor": "Coverage",
@@ -204,6 +208,7 @@
     "Jest.not-found.component.spec.ts.executor": "Run",
     "Jest.register.component.spec.ts.executor": "Coverage",
     "Jest.session-api.service.spec.ts.executor": "Coverage",
+    "Jest.teacher.service.spec.ts.executor": "Coverage",
     "Jest.user.service.spec.ts.executor": "Coverage",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -248,70 +253,70 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.user.service.spec.ts">
-    <configuration name="UserService.UserService test suite.should delete user by id" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.teacher.service.spec.ts">
+    <configuration name="TeacherService.TeacherService test suite.should handle error when retrieving all teachers" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/services/user.service.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/services/teacher.service.spec.ts" />
       <test-names>
-        <test-name value="UserService" />
-        <test-name value="UserService test suite" />
-        <test-name value="should delete user by id" />
+        <test-name value="TeacherService" />
+        <test-name value="TeacherService test suite" />
+        <test-name value="should handle error when retrieving all teachers" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="UserService.UserService test suite.should handle error when deleting user by id" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="TeacherService.TeacherService test suite.should handle error when retrieving teacher details by id" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/services/user.service.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/services/teacher.service.spec.ts" />
       <test-names>
-        <test-name value="UserService" />
-        <test-name value="UserService test suite" />
-        <test-name value="should handle error when deleting user by id" />
+        <test-name value="TeacherService" />
+        <test-name value="TeacherService test suite" />
+        <test-name value="should handle error when retrieving teacher details by id" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="UserService.UserService test suite.should handle error when retrieving user by id" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="TeacherService.TeacherService test suite.should retrieve all teachers" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/services/user.service.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/services/teacher.service.spec.ts" />
       <test-names>
-        <test-name value="UserService" />
-        <test-name value="UserService test suite" />
-        <test-name value="should handle error when retrieving user by id" />
+        <test-name value="TeacherService" />
+        <test-name value="TeacherService test suite" />
+        <test-name value="should retrieve all teachers" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="UserService.UserService test suite.should retrieve user by id" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="TeacherService.TeacherService test suite.should retrieve teacher" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/services/user.service.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/services/teacher.service.spec.ts" />
       <test-names>
-        <test-name value="UserService" />
-        <test-name value="UserService test suite" />
-        <test-name value="should retrieve user by id" />
+        <test-name value="TeacherService" />
+        <test-name value="TeacherService test suite" />
+        <test-name value="should retrieve teacher" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="user.service.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="teacher.service.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
       <working-dir value="$PROJECT_DIR$/front" />
       <envs />
       <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/front/src/app/services/user.service.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/src/app/services/teacher.service.spec.ts" />
       <method v="2" />
     </configuration>
     <configuration name="SpringBootSecurityJwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -339,11 +344,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.user.service.spec.ts" />
-        <item itemvalue="Jest.UserService.UserService test suite.should handle error when deleting user by id" />
-        <item itemvalue="Jest.UserService.UserService test suite.should delete user by id" />
-        <item itemvalue="Jest.UserService.UserService test suite.should handle error when retrieving user by id" />
-        <item itemvalue="Jest.UserService.UserService test suite.should retrieve user by id" />
+        <item itemvalue="Jest.teacher.service.spec.ts" />
+        <item itemvalue="Jest.TeacherService.TeacherService test suite.should handle error when retrieving teacher details by id" />
+        <item itemvalue="Jest.TeacherService.TeacherService test suite.should handle error when retrieving all teachers" />
+        <item itemvalue="Jest.TeacherService.TeacherService test suite.should retrieve teacher" />
+        <item itemvalue="Jest.TeacherService.TeacherService test suite.should retrieve all teachers" />
       </list>
     </recent_temporary>
   </component>
@@ -396,7 +401,7 @@
       <workItem from="1739614124626" duration="3477000" />
       <workItem from="1739626737017" duration="6446000" />
       <workItem from="1739726744487" duration="2191000" />
-      <workItem from="1739779160625" duration="23412000" />
+      <workItem from="1739779160625" duration="24233000" />
     </task>
     <task id="LOCAL-00001" summary="Some fixes to make the project work">
       <option name="closed" value="true" />
@@ -494,7 +499,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739809288271</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="U.T. added for user.service to handle user retrieval and deletion, improving test coverage">
+      <option name="closed" value="true" />
+      <created>1739810754221</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1739810754221</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,7 +537,8 @@
     <MESSAGE value="U.T. added for form.component to handle session creation and update, improving test coverage" />
     <MESSAGE value="U.T. added for session-api.service to handle session operations, improving test coverage" />
     <MESSAGE value="U.T. added for auth.service to handle user registration and login, improving test coverage" />
-    <option name="LAST_COMMIT_MESSAGE" value="U.T. added for auth.service to handle user registration and login, improving test coverage" />
+    <MESSAGE value="U.T. added for user.service to handle user retrieval and deletion, improving test coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="U.T. added for user.service to handle user retrieval and deletion, improving test coverage" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -534,6 +548,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Yoga_app$teacher_service_spec_ts.info" NAME="teacher.service.spec.ts Coverage Results" MODIFIED="1739811389555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$LoginComponent_Login_form_submit_test_suite_should_send_login_request_when_login_and_password_are_valid.info" NAME="LoginComponent.Login form submit test suite.should send login request when login and password are valid Coverage Results" MODIFIED="1739518616142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$LoginComponent_Login_form_submit_test_suite_should_set_onError_to_true_when_login_fails.info" NAME="LoginComponent.Login form submit test suite.should set onError to true when login fails Coverage Results" MODIFIED="1739629511835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Yoga_app$DetailComponent_Detail_component_test_suite_should_navigate_back_on_back_method_call.info" NAME="DetailComponent.Detail component test suite.should navigate back on back method call Coverage Results" MODIFIED="1739797817061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
