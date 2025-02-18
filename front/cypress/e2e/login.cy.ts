@@ -1,5 +1,6 @@
 describe('Login spec', () => {
   const loginUrl = '/login';
+  const sessionUrl = '/sessions';
   const loginApi = '/api/auth/login';
   const sessionApi = '/api/session';
   const emailInput = '[data-testid="email-input"]';
@@ -11,7 +12,15 @@ describe('Login spec', () => {
     cy.visit(loginUrl)
 
     cy.intercept('POST', loginApi, {
-      body: { id: 1, username: 'userName', firstName: 'firstName', lastName: 'lastName', admin: true },
+      body: {
+        token: "abc123",
+        type: "Bearer",
+        id: 1,
+        username: "yoga@studio.com",
+        firstName: "Yoga",
+        lastName: "Studio",
+        admin: true
+      }
     })
 
     cy.intercept(
@@ -24,7 +33,7 @@ describe('Login spec', () => {
     cy.get(emailInput).type("yoga@studio.com")
     cy.get(passwordInput).type(`${"test!1234"}{enter}{enter}`)
 
-    cy.url().should('include', '/sessions')
+    cy.url().should('include', sessionUrl)
   });
 
   it('Login failed when email is not correct', () => {
