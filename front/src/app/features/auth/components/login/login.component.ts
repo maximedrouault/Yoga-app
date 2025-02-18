@@ -32,10 +32,10 @@ export class LoginComponent {
     ]
   });
 
-  constructor(private authService: AuthService,
-              private fb: FormBuilder,
-              private router: Router,
-              private sessionService: SessionService) {
+  constructor(private readonly authService: AuthService,
+              private readonly fb: FormBuilder,
+              private readonly router: Router,
+              private readonly sessionService: SessionService) {
   }
 
   public submit(): void {
@@ -43,9 +43,10 @@ export class LoginComponent {
     this.authService.login(loginRequest).subscribe({
       next: (response: SessionInformation) => {
         this.sessionService.logIn(response);
-        this.router.navigate(['/sessions']);
+        this.router.navigate(['/sessions'])
+          .catch(() => this.onError = true);
       },
-      error: error => this.onError = true,
+      error: (): boolean => this.onError = true,
     });
   }
 }

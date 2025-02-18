@@ -24,13 +24,13 @@ export class DetailComponent implements OnInit {
   public userId: string;
 
   constructor(
-    private route: ActivatedRoute,
-    private fb: FormBuilder,
-    private sessionService: SessionService,
-    private sessionApiService: SessionApiService,
-    private teacherService: TeacherService,
-    private matSnackBar: MatSnackBar,
-    private router: Router) {
+    private readonly route: ActivatedRoute,
+    private readonly fb: FormBuilder,
+    private readonly sessionService: SessionService,
+    private readonly sessionApiService: SessionApiService,
+    private readonly teacherService: TeacherService,
+    private readonly matSnackBar: MatSnackBar,
+    private readonly router: Router) {
     this.sessionId = this.route.snapshot.paramMap.get('id')!;
     this.isAdmin = this.sessionService.sessionInformation!.admin;
     this.userId = this.sessionService.sessionInformation!.id.toString();

@@ -15,8 +15,8 @@ export class ListComponent {
   public sessions$: Observable<Session[]> = this.sessionApiService.all();
 
   constructor(
-    private sessionService: SessionService,
-    private sessionApiService: SessionApiService
+    private readonly sessionService: SessionService,
+    private readonly sessionApiService: SessionApiService
   ) { }
 
   get user(): SessionInformation | undefined {
