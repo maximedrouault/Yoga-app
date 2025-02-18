@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="U.T. added for session.service to handle user login and logout functionality, improving test coverage">
-      <change beforePath="$PROJECT_DIR$/front/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/.nyc_output/out.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/.nyc_output/out.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/cypress/e2e/login.cy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/cypress/e2e/login.cy.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +230,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.SpringBootSecurityJwtApplication.executor": "Run",
-    "git-widget-placeholder": "tests/unit",
+    "git-widget-placeholder": "tests/front-e2e",
     "ignore.virus.scanning.warn.message": "true",
     "ignore_missing_gitignore": "true",
     "kotlin-language-version-configured": "true",
@@ -246,6 +249,7 @@
     "npm.npm install in front.executor": "Run",
     "npm.start.executor": "Run",
     "npm.test.executor": "Run",
+    "npm.test:coverage.executor": "Run",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -262,65 +266,19 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.app.component.spec.ts">
-    <configuration name="AppComponent.AppComponent test suite.should log out and navigate to home" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="npm.e2e">
+    <configuration name="all tests in login.cy.ts" type="JavaScriptTestRunnerCypress" temporary="true">
       <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
+      <cypress-package value="$PROJECT_DIR$/front/node_modules/cypress" />
       <working-dir value="$PROJECT_DIR$/front" />
+      <cypress-options value="-q" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/app.component.spec.ts" />
+      <test-file value="$PROJECT_DIR$/front/cypress/e2e/login.cy.ts" />
       <test-names>
-        <test-name value="AppComponent" />
-        <test-name value="AppComponent test suite" />
-        <test-name value="should log out and navigate to home" />
+        <test-name value="Login spec" />
+        <test-name value="Login successful" />
       </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="AppComponent.AppComponent test suite.should return false when user is not logged in" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
-      <working-dir value="$PROJECT_DIR$/front" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/app.component.spec.ts" />
-      <test-names>
-        <test-name value="AppComponent" />
-        <test-name value="AppComponent test suite" />
-        <test-name value="should return false when user is not logged in" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="AppComponent.AppComponent test suite.should return true when user is logged in" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
-      <working-dir value="$PROJECT_DIR$/front" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/front/src/app/app.component.spec.ts" />
-      <test-names>
-        <test-name value="AppComponent" />
-        <test-name value="AppComponent test suite" />
-        <test-name value="should return true when user is logged in" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="app.component.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
-      <working-dir value="$PROJECT_DIR$/front" />
-      <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/front/src/app/app.component.spec.ts" />
-      <method v="2" />
-    </configuration>
-    <configuration name="session.service.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/front/node_modules/@angular/cli" />
-      <working-dir value="$PROJECT_DIR$/front" />
-      <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/front/src/app/services/session.service.spec.ts" />
       <method v="2" />
     </configuration>
     <configuration name="SpringBootSecurityJwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -336,6 +294,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="cypress:open" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/front/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="cypress:open" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="e2e" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/front/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="e2e" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="e2e:coverage" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/front/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="e2e:coverage" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/front/package.json" />
       <command value="run" />
@@ -346,13 +334,23 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test:coverage" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/front/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test:coverage" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.app.component.spec.ts" />
-        <item itemvalue="Jest.AppComponent.AppComponent test suite.should log out and navigate to home" />
-        <item itemvalue="Jest.AppComponent.AppComponent test suite.should return false when user is not logged in" />
-        <item itemvalue="Jest.AppComponent.AppComponent test suite.should return true when user is logged in" />
-        <item itemvalue="Jest.session.service.spec.ts" />
+        <item itemvalue="npm.e2e" />
+        <item itemvalue="npm.e2e:coverage" />
+        <item itemvalue="npm.cypress:open" />
+        <item itemvalue="npm.test:coverage" />
+        <item itemvalue="Cypress.all tests in login.cy.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -406,6 +404,7 @@
       <workItem from="1739626737017" duration="6446000" />
       <workItem from="1739726744487" duration="2191000" />
       <workItem from="1739779160625" duration="25662000" />
+      <workItem from="1739867689605" duration="8241000" />
     </task>
     <task id="LOCAL-00001" summary="Some fixes to make the project work">
       <option name="closed" value="true" />
