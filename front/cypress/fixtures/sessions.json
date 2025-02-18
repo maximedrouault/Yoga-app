@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Test session",
+    "description": "Test description",
+    "date": "2025-02-10T00:00:00.000+00:00",
+    "teacher_id": 1,
+    "users": [],
+    "createdAt": "2025-02-07T14:43:32",
+    "updatedAt": "2025-02-07T14:44:03"
+  },
+  {
+    "id": 2,
+    "name": "Test session 2",
+    "description": "Test description 2",
+    "date": "2025-02-18T00:00:00.000+00:00",
+    "teacher_id": 2,
+    "users": [],
+    "createdAt": "2025-02-15T17:55:25",
+    "updatedAt": "2025-02-15T17:55:25"
+  }
+]

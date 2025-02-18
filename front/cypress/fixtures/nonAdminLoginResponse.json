@@ -1,0 +1,9 @@
+{
+  "token": "abc123",
+  "type": "Bearer",
+  "id": 1,
+  "username": "yoga@studio.com",
+  "firstName": "Yoga",
+  "lastName": "Studio",
+  "admin": false
+}
