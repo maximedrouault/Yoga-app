@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="U.T. added for session.service to handle user login and logout functionality, improving test coverage">
+    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="E2E tests added for login component and enhance error handling, improving test coverage">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/cypress/e2e/register.cy.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/.nyc_output/out.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/.nyc_output/out.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/cypress/e2e/login.cy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/cypress/e2e/login.cy.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/auth/components/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/features/auth/components/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/auth/components/register/register.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +234,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "ignore_missing_gitignore": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/OC_DFJA/P2/telesport",
+    "last_opened_file_path": "D:/OC_DFJA/P5/Yoga-app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -258,6 +258,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OC_DFJA\P5\Yoga-app" />
+      <recent name="D:\OC_DFJA\P5\Yoga-app\front\cypress\e2e" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -346,8 +352,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.e2e" />
         <item itemvalue="npm.e2e:coverage" />
+        <item itemvalue="npm.e2e" />
         <item itemvalue="npm.cypress:open" />
         <item itemvalue="npm.test:coverage" />
         <item itemvalue="Cypress.all tests in login.cy.ts" />
@@ -404,7 +410,7 @@
       <workItem from="1739626737017" duration="6446000" />
       <workItem from="1739726744487" duration="2191000" />
       <workItem from="1739779160625" duration="25662000" />
-      <workItem from="1739867689605" duration="8241000" />
+      <workItem from="1739867689605" duration="10883000" />
     </task>
     <task id="LOCAL-00001" summary="Some fixes to make the project work">
       <option name="closed" value="true" />
@@ -526,7 +532,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739812030133</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="E2E tests added for login component and enhance error handling, improving test coverage">
+      <option name="closed" value="true" />
+      <created>1739876146036</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1739876146036</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +573,8 @@
     <MESSAGE value="U.T. added for user.service to handle user retrieval and deletion, improving test coverage" />
     <MESSAGE value="U.T. added for teacher.service to handle teacher retrieval and error management, improving test coverage" />
     <MESSAGE value="U.T. added for session.service to handle user login and logout functionality, improving test coverage" />
-    <option name="LAST_COMMIT_MESSAGE" value="U.T. added for session.service to handle user login and logout functionality, improving test coverage" />
+    <MESSAGE value="E2E tests added for login component and enhance error handling, improving test coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="E2E tests added for login component and enhance error handling, improving test coverage" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
