@@ -9,7 +9,11 @@ describe('Sessions spec', () => {
   const selectors = {
     emailInput: '[data-testid="email-input"]',
     passwordInput: '[data-testid="password-input"]',
-    submitButton: '[data-testid="submit-button"]'
+    submitButton: '[data-testid="submit-button"]',
+    sessionList: '[data-testid="session-list"]',
+    detailButton: '[data-testid="detail-button"]',
+    createButton: '[data-testid="create-button"]',
+    editButton: '[data-testid="edit-button"]'
   };
 
   const loginAndVisitSessions = (loginFixture: string) => {
@@ -30,16 +34,16 @@ describe('Sessions spec', () => {
     loginAndVisitSessions('adminLoginResponse');
 
     cy.url().should('include', urls.sessionUrl);
-    cy.get('[data-testid="session-list"]').should('have.length', 2);
-    cy.get('[data-testid="session-list"]').first()
+    cy.get(selectors.sessionList).should('have.length', 2);
+    cy.get(selectors.sessionList).first()
       .should('contain.text', 'Test session')
       .should('contain.text', 'Session on February 10, 2025')
       .should('contain.text', 'Test description');
-    cy.get('[data-testid="session-list"]').last()
+    cy.get(selectors.sessionList).last()
       .should('contain.text', 'Test session 2')
       .should('contain.text', 'Session on February 18, 2025')
       .should('contain.text', 'Test description 2');
-    cy.get('[data-testid="detail-button"]')
+    cy.get(selectors.detailButton)
       .should('have.length', 2)
       .should('contain.text', 'Details');
   });
@@ -47,7 +51,7 @@ describe('Sessions spec', () => {
   it('should display create session button when user is an admin', () => {
     loginAndVisitSessions('adminLoginResponse');
 
-    cy.get('[data-testid="create-button"]')
+    cy.get(selectors.createButton)
       .should('be.visible')
       .should('have.length', 1)
       .should('contain.text', 'Create');
@@ -56,13 +60,13 @@ describe('Sessions spec', () => {
   it('should not display create session button when user is not an admin', () => {
     loginAndVisitSessions('nonAdminLoginResponse');
 
-    cy.get('[data-testid="create-button"]').should('not.exist');
+    cy.get(selectors.createButton).should('not.exist');
   });
 
   it('should display edit session button when user is an admin', () => {
     loginAndVisitSessions('adminLoginResponse');
 
-    cy.get('[data-testid="edit-button"]')
+    cy.get(selectors.editButton)
       .should('be.visible')
       .should('have.length', 2)
       .should('contain.text', 'Edit');
@@ -71,6 +75,6 @@ describe('Sessions spec', () => {
   it('should not display edit session button when user is not an admin', () => {
     loginAndVisitSessions('nonAdminLoginResponse');
 
-    cy.get('[data-testid="edit-button"]').should('not.exist');
+    cy.get(selectors.editButton).should('not.exist');
   });
 });
