@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="E2E tests added for sessions component and enhance error handling, improving test coverage">
-      <change afterPath="$PROJECT_DIR$/front/cypress/fixtures/adminLoginResponse.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/cypress/fixtures/nonAdminLoginResponse.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/cypress/fixtures/sessions.json" afterDir="false" />
+    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="Add session and login response fixtures for E2E tests, improving test coverage">
+      <change afterPath="$PROJECT_DIR$/front/cypress/e2e/session.cy.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/cypress/fixtures/attendeeLoginResponse.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/cypress/fixtures/nonAttendeeLoginResponse.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/cypress/fixtures/session.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/cypress/fixtures/teacher.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/.nyc_output/out.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/.nyc_output/out.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/cypress/e2e/sessions.cy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/cypress/e2e/sessions.cy.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/features/sessions/components/detail/detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/sessions/components/detail/detail.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,9 @@
     &quot;accountId&quot;: &quot;109d04c2-547f-425c-b69a-8ce05a900d48&quot;
   }
 }</component>
+  <component name="HttpClientEndpointsTabState">
+    <option name="cachedRequestData" value="&lt;CachedHttpClientTabRequests&gt;&#10;  &lt;entry key=&quot;48dab270029a1ad7640f404e27f605e3ff4c9aaf&quot; value=&quot;###&amp;#10;DELETE http://localhost:8080/api/session/{{id}}/participate/{{userId}}&quot; /&gt;&#10;&lt;/CachedHttpClientTabRequests&gt;" />
+  </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
@@ -235,7 +240,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/OC_DFJA/P5/Yoga-app&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/OC_DFJA/P5/Yoga-app/front/cypress/fixtures&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -261,6 +266,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OC_DFJA\P5\Yoga-app\front\cypress\fixtures" />
       <recent name="D:\OC_DFJA\P5\Yoga-app" />
       <recent name="D:\OC_DFJA\P5\Yoga-app\front\cypress\e2e" />
     </key>
@@ -355,8 +361,8 @@
       <list>
         <item itemvalue="npm.e2e:coverage" />
         <item itemvalue="npm.e2e" />
-        <item itemvalue="npm.cypress:open" />
         <item itemvalue="npm.test:coverage" />
+        <item itemvalue="npm.cypress:open" />
         <item itemvalue="Cypress.all tests in login.cy.ts" />
       </list>
     </recent_temporary>
@@ -413,7 +419,9 @@
       <workItem from="1739779160625" duration="25662000" />
       <workItem from="1739867689605" duration="10883000" />
       <workItem from="1739890832993" duration="3815000" />
-      <workItem from="1739899037650" duration="2503000" />
+      <workItem from="1739899037650" duration="3741000" />
+      <workItem from="1740037736992" duration="137000" />
+      <workItem from="1740037935570" duration="12792000" />
     </task>
     <task id="LOCAL-00001" summary="Some fixes to make the project work">
       <option name="closed" value="true" />
@@ -551,7 +559,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739901203911</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add login response fixtures and session data for E2E tests, improving test coverage">
+      <option name="closed" value="true" />
+      <created>1739901767456</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1739901767456</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +602,9 @@
     <MESSAGE value="U.T. added for session.service to handle user login and logout functionality, improving test coverage" />
     <MESSAGE value="E2E tests added for login component and enhance error handling, improving test coverage" />
     <MESSAGE value="E2E tests added for sessions component and enhance error handling, improving test coverage" />
-    <option name="LAST_COMMIT_MESSAGE" value="E2E tests added for sessions component and enhance error handling, improving test coverage" />
+    <MESSAGE value="Add login response fixtures and session data for E2E tests, improving test coverage" />
+    <MESSAGE value="Add session and login response fixtures for E2E tests, improving test coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add session and login response fixtures for E2E tests, improving test coverage" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
