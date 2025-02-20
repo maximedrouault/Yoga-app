@@ -1,0 +1,10 @@
+{
+  "id": 1,
+  "email": "john.doe@example.com",
+  "lastName": "Doe",
+  "firstName": "John",
+  "admin": false,
+  "password": "testPassword",
+  "createdAt": "2025-02-03T14:43:32",
+  "updatedAt": "2025-02-05T14:44:03"
+}

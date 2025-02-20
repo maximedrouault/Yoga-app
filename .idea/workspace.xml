@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="Add session and login response fixtures for E2E tests, improving test coverage">
+    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="Refactor session component tests to use selectors for improved readability and maintainability">
+      <change afterPath="$PROJECT_DIR$/front/cypress/e2e/me.cy.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/cypress/fixtures/user.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/.nyc_output/out.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/.nyc_output/out.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/cypress/e2e/sessions.cy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/cypress/e2e/sessions.cy.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/app.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -416,7 +418,7 @@
       <workItem from="1739890832993" duration="3815000" />
       <workItem from="1739899037650" duration="3741000" />
       <workItem from="1740037736992" duration="137000" />
-      <workItem from="1740037935570" duration="13152000" />
+      <workItem from="1740037935570" duration="18668000" />
     </task>
     <task id="LOCAL-00001" summary="Some fixes to make the project work">
       <option name="closed" value="true" />
@@ -570,7 +572,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740057002700</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Refactor session component tests to use selectors for improved readability and maintainability">
+      <option name="closed" value="true" />
+      <created>1740057493789</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1740057493789</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,7 +617,8 @@
     <MESSAGE value="E2E tests added for sessions component and enhance error handling, improving test coverage" />
     <MESSAGE value="Add login response fixtures and session data for E2E tests, improving test coverage" />
     <MESSAGE value="Add session and login response fixtures for E2E tests, improving test coverage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add session and login response fixtures for E2E tests, improving test coverage" />
+    <MESSAGE value="Refactor session component tests to use selectors for improved readability and maintainability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor session component tests to use selectors for improved readability and maintainability" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
