@@ -1,4 +1,4 @@
-describe('Guard spec', () => {
+describe('Unguard spec', () => {
   const urls = {
     loginUrl: '/login',
     sessionsUrl: '/sessions',
