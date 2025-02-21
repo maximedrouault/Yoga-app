@@ -36,6 +36,12 @@ describe('LoginComponent', () => {
 
   const mockRouter = { navigate: jest.fn() }
 
+  const selectors = {
+    emailInput: '[data-testid="email-input"]',
+    passwordInput: '[data-testid="password-input"]',
+    submitButton: '[data-testid="submit-button"]'
+  };
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [LoginComponent],
@@ -70,9 +76,9 @@ describe('LoginComponent', () => {
     const invalidLoginRequest: Mocked<LoginRequest> = { email: 'invalidEmail', password: '!?' };
 
     const fillFormAndSubmit = (loginRequest: Mocked<LoginRequest>) => {
-      const emailInput = fixture.nativeElement.querySelector('[data-testid="email-input"]');
-      const passwordInput = fixture.nativeElement.querySelector('[data-testid="password-input"]');
-      const submitButton = fixture.nativeElement.querySelector('[data-testid="submit-button"]');
+      const emailInput = fixture.nativeElement.querySelector(selectors.emailInput);
+      const passwordInput = fixture.nativeElement.querySelector(selectors.passwordInput);
+      const submitButton = fixture.nativeElement.querySelector(selectors.submitButton);
 
       emailInput.value = loginRequest.email;
       emailInput.dispatchEvent(new Event('input'));
@@ -141,7 +147,7 @@ describe('LoginComponent', () => {
     it('should hide submit button when email is not in a valid format', () => {
       fillFormAndSubmit(invalidLoginRequest);
 
-      const submitButton: HTMLButtonElement = fixture.nativeElement.querySelector('[data-testid="submit-button"]');
+      const submitButton: HTMLButtonElement = fixture.nativeElement.querySelector(selectors.submitButton);
 
       expect(component.hide).toBeTruthy();
       expect(submitButton.disabled).toBeTruthy();

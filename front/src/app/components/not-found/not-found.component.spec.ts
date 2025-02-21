@@ -8,6 +8,10 @@ describe('NotFoundComponent', () => {
   let component: NotFoundComponent;
   let fixture: ComponentFixture<NotFoundComponent>;
 
+  const selectors = {
+    notFoundMessage: '[data-testid="not-found-message"]',
+  };
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ NotFoundComponent ]
@@ -24,7 +28,7 @@ describe('NotFoundComponent', () => {
   });
 
   it('should display a message "Page not found !"', () => {
-    const messageElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="not-found-message"]');
+    const messageElement: HTMLElement = fixture.nativeElement.querySelector(selectors.notFoundMessage);
 
     expect(messageElement?.textContent).toContain("Page not found !");
   });

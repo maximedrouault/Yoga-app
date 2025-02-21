@@ -10,6 +10,11 @@ describe('AuthService', () => {
   let authService: AuthService;
   let httpMock: HttpTestingController;
 
+  const urls = {
+    register: 'api/auth/register',
+    login: 'api/auth/login'
+  };
+
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
@@ -35,7 +40,7 @@ describe('AuthService', () => {
       expect(response).toBeUndefined();
     });
 
-    const request = httpMock.expectOne('api/auth/register');
+    const request = httpMock.expectOne(urls.register);
     expect(request.request.method).toBe('POST');
     request.flush(null);
   });
@@ -60,7 +65,7 @@ describe('AuthService', () => {
       expect(response).toEqual(sessionInfo);
     });
 
-    const request = httpMock.expectOne('api/auth/login');
+    const request = httpMock.expectOne(urls.login);
     expect(request.request.method).toBe('POST');
     request.flush(sessionInfo);
   });
@@ -79,7 +84,7 @@ describe('AuthService', () => {
       }
     });
 
-    const request = httpMock.expectOne('api/auth/register');
+    const request = httpMock.expectOne(urls.register);
     expect(request.request.method).toBe('POST');
     request.flush('Invalid request', { status: 400, statusText: 'Bad Request' });
   });
@@ -96,7 +101,7 @@ describe('AuthService', () => {
       }
     });
 
-    const request = httpMock.expectOne('api/auth/login');
+    const request = httpMock.expectOne(urls.login);
     expect(request.request.method).toBe('POST');
     request.flush('Unauthorized', { status: 401, statusText: 'Unauthorized' });
   });
