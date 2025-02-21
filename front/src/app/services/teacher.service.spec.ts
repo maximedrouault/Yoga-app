@@ -10,6 +10,11 @@ describe('TeacherService', () => {
   let teacherService: TeacherService;
   let httpMock: HttpTestingController;
 
+  const urls = {
+    teachersApi: 'api/teacher',
+    teacherApi: 'api/teacher/1'
+  };
+
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [
@@ -40,7 +45,7 @@ describe('TeacherService', () => {
         expect(teachers).toEqual(mockTeachers);
       });
 
-      const request = httpMock.expectOne('api/teacher');
+      const request = httpMock.expectOne(urls.teachersApi);
       expect(request.request.method).toBe('GET');
       request.flush(mockTeachers);
     });
@@ -54,7 +59,7 @@ describe('TeacherService', () => {
         expect(teacher).toEqual(mockTeacher);
       });
 
-      const request = httpMock.expectOne('api/teacher/1');
+      const request = httpMock.expectOne(urls.teacherApi);
       expect(request.request.method).toBe('GET');
       request.flush(mockTeacher);
     });
@@ -67,7 +72,7 @@ describe('TeacherService', () => {
         }
       });
 
-      const request = httpMock.expectOne('api/teacher');
+      const request = httpMock.expectOne(urls.teachersApi);
       request.flush('error', { status: 500, statusText: 'Server Error' });
     });
 
@@ -79,7 +84,7 @@ describe('TeacherService', () => {
         }
       });
 
-      const request = httpMock.expectOne('api/teacher/1');
+      const request = httpMock.expectOne(urls.teacherApi);
       request.flush('error', { status: 404, statusText: 'Not Found' });
     });
   });

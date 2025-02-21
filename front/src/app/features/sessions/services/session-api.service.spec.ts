@@ -10,6 +10,12 @@ describe('SessionsService', () => {
   let sessionApiService: SessionApiService;
   let httpMock: HttpTestingController;
 
+  const urls = {
+    sessionsApi: 'api/session',
+    sessionApi: 'api/session/1',
+    participateApi: 'api/session/1/participate/user1'
+  };
+
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports:[
@@ -40,7 +46,7 @@ describe('SessionsService', () => {
         expect(sessions).toEqual(mockSessions);
       });
 
-      const request = httpMock.expectOne('api/session');
+      const request = httpMock.expectOne(urls.sessionsApi);
       expect(request.request.method).toBe('GET');
       request.flush(mockSessions);
     });
@@ -52,7 +58,7 @@ describe('SessionsService', () => {
         expect(session).toEqual(mockSession);
       });
 
-      const request = httpMock.expectOne('api/session/1');
+      const request = httpMock.expectOne(urls.sessionApi);
       expect(request.request.method).toBe('GET');
       request.flush(mockSession);
     });
@@ -62,7 +68,7 @@ describe('SessionsService', () => {
         expect(response).toBeTruthy();
       });
 
-      const request = httpMock.expectOne('api/session/1');
+      const request = httpMock.expectOne(urls.sessionApi);
       expect(request.request.method).toBe('DELETE');
       request.flush({});
     });
@@ -81,7 +87,7 @@ describe('SessionsService', () => {
         expect(session).toEqual(mockNewSession);
       });
 
-      const request = httpMock.expectOne('api/session');
+      const request = httpMock.expectOne(urls.sessionsApi);
       expect(request.request.method).toBe('POST');
       request.flush(mockNewSession);
     });
@@ -100,7 +106,7 @@ describe('SessionsService', () => {
         expect(session).toEqual(updatedSession);
       });
 
-      const request = httpMock.expectOne('api/session/1');
+      const request = httpMock.expectOne(urls.sessionApi);
       expect(request.request.method).toBe('PUT');
       request.flush(updatedSession);
     });
@@ -110,7 +116,7 @@ describe('SessionsService', () => {
         expect(response).toBeUndefined();
       });
 
-      const request = httpMock.expectOne('api/session/1/participate/user1');
+      const request = httpMock.expectOne(urls.participateApi);
       expect(request.request.method).toBe('POST');
       request.flush(null);
     });
@@ -120,7 +126,7 @@ describe('SessionsService', () => {
         expect(response).toBeUndefined();
       });
 
-      const request = httpMock.expectOne('api/session/1/participate/user1');
+      const request = httpMock.expectOne(urls.participateApi);
       expect(request.request.method).toBe('DELETE');
       request.flush(null);
     });

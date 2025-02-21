@@ -46,6 +46,19 @@ describe('MeComponent', () => {
 
   const mockRouter = { navigate: jest.fn() };
 
+  const selectors = {
+    userInfoTitle: '[data-testid="user-info-title"]',
+    userNames: '[data-testid="user-names"]',
+    userEmail: '[data-testid="user-email"]',
+    userCreatedAt: '[data-testid="user-created-at"]',
+    userUpdatedAt: '[data-testid="user-updated-at"]',
+    userInfoArea: '[data-testid="user-info-area"]',
+    adminStatus: '[data-testid="admin-status"]',
+    deleteAccountButton: '[data-testid="delete-account-button"]',
+    deleteAccountLabel: '[data-testid="delete-account-label"]',
+    backButton: '[data-testid="back-button"]'
+  };
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [MeComponent],
@@ -88,7 +101,7 @@ describe('MeComponent', () => {
 
   describe('User information title area test suite', () => {
     it('should display user info title', () => {
-      const titleElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="user-info-title"]');
+      const titleElement: HTMLElement = fixture.nativeElement.querySelector(selectors.userInfoTitle);
 
       expect(titleElement).toBeTruthy();
       expect(titleElement.textContent).toContain('User information');
@@ -98,7 +111,7 @@ describe('MeComponent', () => {
 
   describe('User information area test suite when user is defined', () => {
     it('should display the firstName and lastName', () => {
-      const userNamesElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="user-names"]');
+      const userNamesElement: HTMLElement = fixture.nativeElement.querySelector(selectors.userNames);
 
       expect(userNamesElement).toBeTruthy();
       expect(userNamesElement.textContent).toContain('Name');
@@ -107,7 +120,7 @@ describe('MeComponent', () => {
     });
 
     it('should display email', () => {
-      const userEmailElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="user-email"]');
+      const userEmailElement: HTMLElement = fixture.nativeElement.querySelector(selectors.userEmail);
 
       expect(userEmailElement).toBeTruthy();
       expect(userEmailElement.textContent).toContain('Email');
@@ -115,7 +128,7 @@ describe('MeComponent', () => {
     });
 
     it('should display user account creation date', () => {
-      const userCreatedAtElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="user-created-at"]');
+      const userCreatedAtElement: HTMLElement = fixture.nativeElement.querySelector(selectors.userCreatedAt);
 
       expect(userCreatedAtElement).toBeTruthy();
       expect(userCreatedAtElement.textContent).toContain('Create at');
@@ -123,7 +136,7 @@ describe('MeComponent', () => {
     });
 
     it('should display user account update date', () => {
-      const userUpdatedAtElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="user-updated-at"]');
+      const userUpdatedAtElement: HTMLElement = fixture.nativeElement.querySelector(selectors.userUpdatedAt);
 
       expect(userUpdatedAtElement).toBeTruthy();
       expect(userUpdatedAtElement.textContent).toContain('Last update');
@@ -139,31 +152,31 @@ describe('MeComponent', () => {
     });
 
     it('should not display the firstName and LastName when user names is undefined', () => {
-      const userNamesElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="user-names"]');
+      const userNamesElement: HTMLElement = fixture.nativeElement.querySelector(selectors.userNames);
 
       expect(userNamesElement).toBeNull();
     });
 
     it('should not display email when user email is undefined', () => {
-      const userEmailElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="user-email"]');
+      const userEmailElement: HTMLElement = fixture.nativeElement.querySelector(selectors.userEmail);
 
       expect(userEmailElement).toBeNull();
     });
 
     it('should not display user account creation date when user creation date is undefined', () => {
-       const userCreatedAtElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="user-created-at"]');
+       const userCreatedAtElement: HTMLElement = fixture.nativeElement.querySelector(selectors.userCreatedAt);
 
       expect(userCreatedAtElement).toBeNull();
     });
 
     it('should not display user account update date when user update date is undefined', () => {
-      const userUpdatedAtElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="user-updated-at"]');
+      const userUpdatedAtElement: HTMLElement = fixture.nativeElement.querySelector(selectors.userUpdatedAt);
 
       expect(userUpdatedAtElement).toBeNull();
     });
 
     it('should not display user information area when user is undefined', () => {
-      const userInfoAreaElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="user-info-area"]');
+      const userInfoAreaElement: HTMLElement = fixture.nativeElement.querySelector(selectors.userInfoArea);
 
       expect(userInfoAreaElement).toBeNull();
     });
@@ -172,14 +185,14 @@ describe('MeComponent', () => {
 
   describe('User information area test suite when user is an admin', () => {
     it('should display admin status when user is an admin', () => {
-      const adminStatusElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="admin-status"]');
+      const adminStatusElement: HTMLElement = fixture.nativeElement.querySelector(selectors.adminStatus);
 
       expect(adminStatusElement).toBeTruthy();
       expect(adminStatusElement.textContent).toContain('You are admin');
     });
 
     it('should not display delete button for admin user', () => {
-      const deleteAccountButton: HTMLElement = fixture.nativeElement.querySelector('[data-testid="delete-account-button"]');
+      const deleteAccountButton: HTMLElement = fixture.nativeElement.querySelector(selectors.deleteAccountButton);
 
       expect(deleteAccountButton).toBeNull();
     });
@@ -193,20 +206,20 @@ describe('MeComponent', () => {
     });
 
     it('should not display admin status when user is not an admin', () => {
-      const adminStatusElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="admin-status"]');
+      const adminStatusElement: HTMLElement = fixture.nativeElement.querySelector(selectors.adminStatus);
 
       expect(adminStatusElement).toBeNull();
     });
 
     it('should display Delete account label when user is not an admin', () => {
-      const deleteAccountElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="delete-account-label"]');
+      const deleteAccountElement: HTMLElement = fixture.nativeElement.querySelector(selectors.deleteAccountLabel);
 
       expect(deleteAccountElement).toBeTruthy();
       expect(deleteAccountElement.textContent).toContain('Delete my account:');
     });
 
     it('should display delete user account button when user is not an admin', () => {
-      const deleteAccountElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="delete-account-button"]');
+      const deleteAccountElement: HTMLElement = fixture.nativeElement.querySelector(selectors.deleteAccountButton);
 
       expect(deleteAccountElement).toBeTruthy();
       expect(deleteAccountElement.textContent).toContain('Delete');
@@ -215,7 +228,7 @@ describe('MeComponent', () => {
     it('should call userService.delete() when delete button is clicked', () => {
       const deleteSpy = jest.spyOn(mockUserService, 'delete');
 
-      const deleteAccountButton: HTMLElement = fixture.nativeElement.querySelector('[data-testid="delete-account-button"]');
+      const deleteAccountButton: HTMLElement = fixture.nativeElement.querySelector(selectors.deleteAccountButton);
       deleteAccountButton.click();
 
       expect(deleteSpy).toHaveBeenCalledWith(mockSessionService.sessionInformation!.id.toString());
@@ -224,7 +237,7 @@ describe('MeComponent', () => {
     it('should open MatSnackBar when delete user account is called', () => {
       const matSnackBarSpy = jest.spyOn(mockMatSnackBar, 'open');
 
-      const deleteAccountButton: HTMLElement = fixture.nativeElement.querySelector('[data-testid="delete-account-button"]');
+      const deleteAccountButton: HTMLElement = fixture.nativeElement.querySelector(selectors.deleteAccountButton);
       deleteAccountButton.click();
 
       expect(matSnackBarSpy).toHaveBeenCalledWith("Your account has been deleted !", 'Close', { duration: 3000 });
@@ -233,7 +246,7 @@ describe('MeComponent', () => {
     it('should logout user after user account is deleted', () => {
       const logOutSpy = jest.spyOn(mockSessionService, 'logOut');
 
-      const deleteAccountButton: HTMLElement = fixture.nativeElement.querySelector('[data-testid="delete-account-button"]');
+      const deleteAccountButton: HTMLElement = fixture.nativeElement.querySelector(selectors.deleteAccountButton);
       deleteAccountButton.click();
 
       expect(logOutSpy).toHaveBeenCalled();
@@ -242,7 +255,7 @@ describe('MeComponent', () => {
     it('should navigate to home page after user account is deleted', () => {
       const routerSpy = jest.spyOn(mockRouter, 'navigate');
 
-      const deleteAccountButton: HTMLElement = fixture.nativeElement.querySelector('[data-testid="delete-account-button"]');
+      const deleteAccountButton: HTMLElement = fixture.nativeElement.querySelector(selectors.deleteAccountButton);
       deleteAccountButton.click();
 
       expect(routerSpy).toHaveBeenCalledWith(['/']);
@@ -252,7 +265,7 @@ describe('MeComponent', () => {
 
   describe('Back button test suite', () => {
     it('should display back button', () => {
-      const backButtonElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="back-button"]');
+      const backButtonElement: HTMLElement = fixture.nativeElement.querySelector(selectors.backButton);
 
       expect(backButtonElement).toBeTruthy();
     });
@@ -260,7 +273,7 @@ describe('MeComponent', () => {
     it('should go back to the previous page when back button is clicked', () => {
       const backSpy = jest.spyOn(window.history, 'back');
 
-      const backButtonElement: HTMLElement = fixture.nativeElement.querySelector('[data-testid="back-button"]');
+      const backButtonElement: HTMLElement = fixture.nativeElement.querySelector(selectors.backButton);
       backButtonElement.click();
 
       expect(backSpy).toHaveBeenCalled();

@@ -10,6 +10,10 @@ describe('UserService', () => {
   let userService: UserService;
   let httpMock: HttpTestingController;
 
+  const urls = {
+    userApi: 'api/user/1'
+  };
+
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports:[
@@ -47,7 +51,7 @@ describe('UserService', () => {
         expect(user).toEqual(mockUser);
       });
 
-      const request = httpMock.expectOne('api/user/1');
+      const request = httpMock.expectOne(urls.userApi);
       expect(request.request.method).toBe('GET');
       request.flush(mockUser);
     });
@@ -60,7 +64,7 @@ describe('UserService', () => {
         }
       });
 
-      const request = httpMock.expectOne('api/user/1');
+      const request = httpMock.expectOne(urls.userApi);
       expect(request.request.method).toBe('GET');
       request.flush('User not found', { status: 404, statusText: 'Not Found' });
     });
@@ -70,7 +74,7 @@ describe('UserService', () => {
           expect(response).toBeTruthy();
         });
 
-        const request = httpMock.expectOne('api/user/1');
+        const request = httpMock.expectOne(urls.userApi);
         expect(request.request.method).toBe('DELETE');
         request.flush(null);
     });
@@ -82,7 +86,7 @@ describe('UserService', () => {
         }
       });
 
-      const request = httpMock.expectOne('api/user/1');
+      const request = httpMock.expectOne(urls.userApi);
       request.flush('User not found', { status: 404, statusText: 'Not Found' });
     });
   });

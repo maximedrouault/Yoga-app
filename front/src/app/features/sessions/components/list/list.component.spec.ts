@@ -22,6 +22,11 @@ describe('ListComponent', () => {
     ]))
   }
 
+  const selectors = {
+    createButton: '[data-testid="create-button"]',
+    editButton: '[data-testid="edit-button"]'
+  };
+
   beforeEach(async () => {
     mockSessionService = {
       sessionInformation: {
@@ -50,7 +55,7 @@ describe('ListComponent', () => {
 
 
   it('should display create button if user is admin', () => {
-    const createButtonElement: HTMLButtonElement = fixture.nativeElement.querySelector('[data-testid="create-button"]');
+    const createButtonElement: HTMLButtonElement = fixture.nativeElement.querySelector(selectors.createButton);
 
     expect(createButtonElement).toBeTruthy();
     expect(createButtonElement.textContent).toContain('Create');
@@ -60,14 +65,14 @@ describe('ListComponent', () => {
     mockSessionService.sessionInformation.admin = false;
     fixture.detectChanges();
 
-    const createButtonElement: HTMLButtonElement = fixture.nativeElement.querySelector('[data-testid="create-button"]');
+    const createButtonElement: HTMLButtonElement = fixture.nativeElement.querySelector(selectors.createButton);
 
     expect(component.user?.admin).toBe(false);
     expect(createButtonElement).toBeFalsy();
   });
 
   it('should display edit button for each session if user is admin', () => {
-    const editButtonElements = fixture.nativeElement.querySelectorAll('[data-testid="edit-button"]');
+    const editButtonElements = fixture.nativeElement.querySelectorAll(selectors.editButton);
 
     expect(editButtonElements).toBeTruthy();
     expect(editButtonElements.length).toBe(2);
@@ -80,7 +85,7 @@ describe('ListComponent', () => {
     mockSessionService.sessionInformation.admin = false;
     fixture.detectChanges();
 
-    const editButtonElement: HTMLButtonElement = fixture.nativeElement.querySelector('[data-testid="edit-button"]');
+    const editButtonElement: HTMLButtonElement = fixture.nativeElement.querySelector(selectors.editButton);
 
     expect(component.user?.admin).toBe(false);
     expect(editButtonElement).toBeFalsy();

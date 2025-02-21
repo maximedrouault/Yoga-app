@@ -26,6 +26,14 @@ describe('RegisterComponent', () => {
 
   const mockRouter = { navigate: jest.fn() }
 
+  const selectors = {
+    firstNameInput: '[data-testid="first-name-input"]',
+    lastNameInput: '[data-testid="last-name-input"]',
+    emailInput: '[data-testid="email-input"]',
+    passwordInput: '[data-testid="password-input"]',
+    submitButton: '[data-testid="submit-button"]'
+  };
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [RegisterComponent],
@@ -64,11 +72,11 @@ describe('RegisterComponent', () => {
     };
 
     const fillFormAndSubmit = (registerRequest: Mocked<RegisterRequest>) => {
-      const firstNameInput = fixture.nativeElement.querySelector('[data-testid="first-name-input"]');
-      const lastNameInput = fixture.nativeElement.querySelector('[data-testid="last-name-input"]');
-      const emailInput = fixture.nativeElement.querySelector('[data-testid="email-input"]');
-      const passwordInput = fixture.nativeElement.querySelector('[data-testid="password-input"]');
-      const submitButton = fixture.nativeElement.querySelector('[data-testid="submit-button"]');
+      const firstNameInput = fixture.nativeElement.querySelector(selectors.firstNameInput);
+      const lastNameInput = fixture.nativeElement.querySelector(selectors.lastNameInput);
+      const emailInput = fixture.nativeElement.querySelector(selectors.emailInput);
+      const passwordInput = fixture.nativeElement.querySelector(selectors.passwordInput);
+      const submitButton = fixture.nativeElement.querySelector(selectors.submitButton);
 
       firstNameInput.value = registerRequest.firstName;
       firstNameInput.dispatchEvent(new Event('input'));
