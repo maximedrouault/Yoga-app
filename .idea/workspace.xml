@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="Add E2E tests for 404 page, improving test coverage">
-      <change afterPath="$PROJECT_DIR$/front/cypress/e2e/form.cy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/cypress/fixtures/teachers.json" afterDir="false" />
+    <list default="true" id="84c5986e-d2fa-484c-ad72-db8565beef37" name="Changes" comment="Add E2E tests for form session">
+      <change afterPath="$PROJECT_DIR$/front/cypress/e2e/all.cy.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/cypress/e2e/guard.cy.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/.nyc_output/out.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/.nyc_output/out.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/features/sessions/components/form/form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/sessions/components/form/form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/features/sessions/components/form/form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/features/sessions/components/form/form.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -421,7 +419,7 @@
       <workItem from="1740037736992" duration="137000" />
       <workItem from="1740037935570" duration="27893000" />
       <workItem from="1740124145617" duration="4826000" />
-      <workItem from="1740129494102" duration="258000" />
+      <workItem from="1740129494102" duration="1659000" />
     </task>
     <task id="LOCAL-00001" summary="Some fixes to make the project work">
       <option name="closed" value="true" />
@@ -599,7 +597,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740064113857</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Add E2E tests for form session">
+      <option name="closed" value="true" />
+      <created>1740130044745</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1740130044745</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +645,8 @@
     <MESSAGE value="Refactor session component tests to use selectors for improved readability and maintainability" />
     <MESSAGE value="Add user fixture and E2E tests for account details, improving test coverage" />
     <MESSAGE value="Add E2E tests for 404 page, improving test coverage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add E2E tests for 404 page, improving test coverage" />
+    <MESSAGE value="Add E2E tests for form session" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add E2E tests for form session" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
