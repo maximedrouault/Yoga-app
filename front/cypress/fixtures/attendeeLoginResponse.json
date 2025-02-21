@@ -1,0 +1,9 @@
+{
+  "token": "abc123",
+  "type": "Bearer",
+  "id": 1,
+  "username": "attendee@example.com",
+  "firstName": "Test",
+  "lastName": "Attendee",
+  "admin": false
+}
