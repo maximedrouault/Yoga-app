@@ -1,6 +1,7 @@
 package com.openclassrooms.starterjwt.units.controllers;
 
 import com.openclassrooms.starterjwt.controllers.UserController;
+import com.openclassrooms.starterjwt.dto.UserDto;
 import com.openclassrooms.starterjwt.mapper.UserMapper;
 import com.openclassrooms.starterjwt.models.User;
 import com.openclassrooms.starterjwt.services.UserService;
@@ -36,12 +37,14 @@ public class UserControllerTest {
     void findById_ValidId_ReturnsUser() {
         Long userId = 1L;
         User user = new User();
+        UserDto userDto = new UserDto();
         when(userService.findById(userId)).thenReturn(user);
+        when(userMapper.toDto(user)).thenReturn(userDto);
 
         ResponseEntity<?> response = userController.findById(userId.toString());
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
-        verify(userMapper).toDto(user);
+        assertEquals(userDto, response.getBody());
     }
 
     @Test

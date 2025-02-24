@@ -37,15 +37,14 @@ public class TeacherControllerTest {
     void findById_ValidId_ReturnsTeacher() {
         Long teacherId = 1L;
         Teacher teacher = new Teacher();
-        when(teacherService.findById(teacherId)).thenReturn(teacher);
         TeacherDto teacherDto = new TeacherDto();
+        when(teacherService.findById(teacherId)).thenReturn(teacher);
         when(teacherMapper.toDto(teacher)).thenReturn(teacherDto);
 
         ResponseEntity<?> response = teacherController.findById(teacherId.toString());
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(teacherDto, response.getBody());
-        verify(teacherMapper).toDto(teacher);
     }
 
     @Test
@@ -69,8 +68,8 @@ public class TeacherControllerTest {
     @Test
     void findAll_TeachersExist_ReturnsListOfTeachers() {
         List<Teacher> teachers = Collections.singletonList(new Teacher());
-        when(teacherService.findAll()).thenReturn(teachers);
         List<TeacherDto> teacherDto = Collections.singletonList(new TeacherDto());
+        when(teacherService.findAll()).thenReturn(teachers);
         when(teacherMapper.toDto(teachers)).thenReturn(teacherDto);
 
         ResponseEntity<?> response = teacherController.findAll();
