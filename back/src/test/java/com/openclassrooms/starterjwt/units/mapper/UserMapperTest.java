@@ -26,8 +26,8 @@ public class UserMapperTest {
         user.setFirstName("John");
         user.setPassword("password");
         user.setAdmin(false);
-        user.setCreatedAt(LocalDateTime.now());
-        user.setUpdatedAt(LocalDateTime.now().plusDays(1));
+        user.setCreatedAt(LocalDateTime.now().minusDays(1));
+        user.setUpdatedAt(LocalDateTime.now());
 
         UserDto userDto = userMapper.toDto(user);
 
@@ -59,8 +59,8 @@ public class UserMapperTest {
         user.setFirstName("John");
         user.setPassword("password");
         user.setAdmin(false);
-        user.setCreatedAt(LocalDateTime.now());
-        user.setUpdatedAt(LocalDateTime.now().plusDays(1));
+        user.setCreatedAt(LocalDateTime.now().minusDays(1));
+        user.setUpdatedAt(LocalDateTime.now());
 
         List<User> users = new ArrayList<>();
         users.add(user);
@@ -106,8 +106,8 @@ public class UserMapperTest {
         userDto.setFirstName("John");
         userDto.setPassword("password");
         userDto.setAdmin(false);
-        userDto.setCreatedAt(LocalDateTime.now());
-        userDto.setUpdatedAt(LocalDateTime.now().plusDays(1));
+        userDto.setCreatedAt(LocalDateTime.now().minusDays(1));
+        userDto.setUpdatedAt(LocalDateTime.now());
 
         User user = userMapper.toEntity(userDto);
 
@@ -139,8 +139,8 @@ public class UserMapperTest {
         userDto.setFirstName("John");
         userDto.setPassword("password");
         userDto.setAdmin(false);
-        userDto.setCreatedAt(LocalDateTime.now());
-        userDto.setUpdatedAt(LocalDateTime.now().plusDays(1));
+        userDto.setCreatedAt(LocalDateTime.now().minusDays(1));
+        userDto.setUpdatedAt(LocalDateTime.now());
 
         List<UserDto> userDtos = new ArrayList<>();
         userDtos.add(userDto);
