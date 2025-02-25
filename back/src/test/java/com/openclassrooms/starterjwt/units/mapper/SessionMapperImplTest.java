@@ -93,18 +93,14 @@ public class SessionMapperImplTest {
 
     @Test
     void toEntity_NullSessionDto_ReturnsNull() {
-        SessionDto sessionDto = null;
-
-        Session session = sessionMapper.toEntity(sessionDto);
+        Session session = sessionMapper.toEntity((SessionDto) null);
 
         assertNull(session);
     }
 
     @Test
     void toEntity_NullSessionDtoList_ReturnsNull() {
-        List<SessionDto> sessionDtoList = null;
-
-        List<Session> sessions = sessionMapper.toEntity(sessionDtoList);
+        List<Session> sessions = sessionMapper.toEntity((List<SessionDto>) null);
 
         assertNull(sessions);
     }
@@ -183,18 +179,14 @@ public class SessionMapperImplTest {
 
     @Test
     void toDto_NullSession_ReturnsNull() {
-        Session session = null;
-
-        SessionDto sessionDto = sessionMapper.toDto(session);
+        SessionDto sessionDto = sessionMapper.toDto((Session) null);
 
         assertNull(sessionDto);
     }
 
     @Test
     void toDto_NullSessionList_ReturnsNull() {
-        List<Session> sessions = null;
-
-        List<SessionDto> sessionDtos = sessionMapper.toDto(sessions);
+        List<SessionDto> sessionDtos = sessionMapper.toDto((List<Session>) null);
 
         assertNull(sessionDtos);
     }

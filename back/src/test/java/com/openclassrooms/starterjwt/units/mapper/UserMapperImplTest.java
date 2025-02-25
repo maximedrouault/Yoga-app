@@ -12,7 +12,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class UserMapperTest {
+public class UserMapperImplTest {
 
     private final UserMapper userMapper = Mappers.getMapper(UserMapper.class);
 
@@ -92,6 +92,7 @@ public class UserMapperTest {
     @Test
     void toDto_EmptyUserList_ReturnsEmptyUserDtoList() {
         List<User> users = new ArrayList<>();
+
         List<UserDto> userDtos = userMapper.toDto(users);
 
         assertTrue(userDtos.isEmpty());
@@ -171,6 +172,7 @@ public class UserMapperTest {
     @Test
     void toEntity_EmptyUserDtoList_ReturnsEmptyUserList() {
         List<UserDto> userDtos = new ArrayList<>();
+
         List<User> users = userMapper.toEntity(userDtos);
 
         assertTrue(users.isEmpty());

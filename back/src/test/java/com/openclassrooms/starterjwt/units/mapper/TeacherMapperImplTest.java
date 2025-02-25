@@ -12,7 +12,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TeacherMapperTest {
+public class TeacherMapperImplTest {
 
     private final TeacherMapper teacherMapper = Mappers.getMapper(TeacherMapper.class);
 
@@ -133,6 +133,7 @@ public class TeacherMapperTest {
     @Test
     void toDto_NullTeacherList_ReturnsNull() {
         List<TeacherDto> teacherDtos = teacherMapper.toDto((List<Teacher>) null);
+
         assertNull(teacherDtos);
     }
 }
