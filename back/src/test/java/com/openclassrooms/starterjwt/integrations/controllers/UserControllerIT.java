@@ -29,13 +29,13 @@ public class UserControllerIT {
     @Autowired
     private AuthUtil authUtil;
 
-    private String adminJwtToken;
-    private String nonAdminJwtToken;
+    private final HttpHeaders adminHttpHeaders = new HttpHeaders();
+    private final HttpHeaders nonAdminHttpHeaders = new HttpHeaders();
 
     @BeforeEach
     void setUp() throws Exception {
-        this.adminJwtToken = authUtil.obtainAdminJwtToken();
-        this.nonAdminJwtToken = authUtil.obtainNonAdminJwtToken();
+        adminHttpHeaders.add(HttpHeaders.AUTHORIZATION, "Bearer " + authUtil.obtainAdminJwtToken());
+        nonAdminHttpHeaders.add(HttpHeaders.AUTHORIZATION, "Bearer " + authUtil.obtainNonAdminJwtToken());
     }
 
 
@@ -44,7 +44,7 @@ public class UserControllerIT {
         long userId = 2L;
 
         mockMvc.perform(get("/api/user/{id}", userId)
-                        .header(HttpHeaders.AUTHORIZATION, "Bearer " + adminJwtToken)
+                        .headers(adminHttpHeaders)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpectAll(
@@ -64,7 +64,7 @@ public class UserControllerIT {
         long userId = 999; // User with id 999 does not exist
 
         mockMvc.perform(get("/api/user/{id}", userId)
-                        .header(HttpHeaders.AUTHORIZATION, "Bearer " + adminJwtToken)
+                        .headers(adminHttpHeaders)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound());
     }
@@ -74,7 +74,7 @@ public class UserControllerIT {
         String invalidId = "invalid-id";
 
         mockMvc.perform(get("/api/user/{id}", invalidId)
-                        .header(HttpHeaders.AUTHORIZATION, "Bearer " + adminJwtToken)
+                        .headers(adminHttpHeaders)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isBadRequest());
     }
@@ -85,7 +85,7 @@ public class UserControllerIT {
         long userId = 2L;
 
         mockMvc.perform(delete("/api/user/{id}", userId)
-                        .header(HttpHeaders.AUTHORIZATION, "Bearer " + nonAdminJwtToken)
+                        .headers(nonAdminHttpHeaders)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }
@@ -95,7 +95,7 @@ public class UserControllerIT {
         long userId = 2L; // ID of other user than the authenticated user
 
         mockMvc.perform(delete("/api/user/{id}", userId)
-                        .header(HttpHeaders.AUTHORIZATION, "Bearer " + adminJwtToken)
+                        .headers(adminHttpHeaders)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isUnauthorized());
     }
@@ -105,7 +105,7 @@ public class UserControllerIT {
         long userId = 999; // User with id 999 does not exist
 
         mockMvc.perform(delete("/api/user/{id}", userId)
-                        .header(HttpHeaders.AUTHORIZATION, "Bearer " + adminJwtToken)
+                        .headers(adminHttpHeaders)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound());
     }
@@ -115,7 +115,7 @@ public class UserControllerIT {
         String invalidId = "invalid-id";
 
         mockMvc.perform(delete("/api/user/{id}", invalidId)
-                        .header(HttpHeaders.AUTHORIZATION, "Bearer " + adminJwtToken)
+                        .headers(adminHttpHeaders)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isBadRequest());
     }
