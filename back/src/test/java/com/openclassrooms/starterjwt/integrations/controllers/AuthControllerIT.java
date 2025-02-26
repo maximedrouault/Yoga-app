@@ -51,6 +51,27 @@ public class AuthControllerIT {
     }
 
     @Test
+    void authenticateUser_NonAdminUser_ReturnsJwtResponse() throws Exception {
+        LoginRequest loginRequest = new LoginRequest();
+        loginRequest.setEmail("john.doe@example.com");
+        loginRequest.setPassword("password123");
+
+        String loginRequestJson = objectMapper.writeValueAsString(loginRequest);
+
+        mockMvc.perform(post("/api/auth/login")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(loginRequestJson))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.token").isNotEmpty())
+                .andExpect(jsonPath("$.type").value("Bearer"))
+                .andExpect(jsonPath("$.id").value(2))
+                .andExpect(jsonPath("$.username").value("john.doe@example.com"))
+                .andExpect(jsonPath("$.firstName").value("John"))
+                .andExpect(jsonPath("$.lastName").value("Doe"))
+                .andExpect(jsonPath("$.admin").value(false));
+    }
+
+    @Test
     void authenticateUser_InvalidCredentials_ReturnsUnauthorized() throws Exception {
         LoginRequest loginRequest = new LoginRequest();
         loginRequest.setEmail("nonexistent@example.com");
