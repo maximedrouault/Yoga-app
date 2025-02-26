@@ -30,7 +30,6 @@ public class UserControllerIT {
     private AuthUtil authUtil;
 
     private String adminJwtToken;
-
     private String nonAdminJwtToken;
 
     @BeforeEach

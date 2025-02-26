@@ -1,6 +1,6 @@
-INSERT INTO TEACHERS (first_name, last_name)
-VALUES ('Margot', 'DELAHAYE'),
-       ('Hélène', 'THIERCELIN');
+INSERT INTO TEACHERS (first_name, last_name, created_at, updated_at)
+VALUES ('Margot', 'DELAHAYE', '2023-01-01T00:00:00', '2023-02-15T12:30:00'),
+       ('Hélène', 'THIERCELIN', '2023-03-01T00:00:00', '2023-04-15T12:30:00');
 
 
 INSERT INTO USERS (first_name, last_name, admin, email, password, created_at, updated_at)
