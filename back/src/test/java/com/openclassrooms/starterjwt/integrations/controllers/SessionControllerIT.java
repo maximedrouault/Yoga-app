@@ -20,7 +20,6 @@ import java.util.Arrays;
 import java.util.Date;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -181,8 +180,7 @@ public class SessionControllerIT {
                         jsonPath("$.date").value("2025-02-26T16:29:27.677+00:00"),
                         jsonPath("$.createdAt").value("2025-02-25T17:30:00"),
                         jsonPath("$.updatedAt").value("2025-02-26T12:00:00")
-                )
-                .andDo(print());
+                );
     }
 
     @Test
@@ -265,7 +263,6 @@ public class SessionControllerIT {
         mockMvc.perform(post("/api/session/{id}/participate/{userId}", sessionId, userId)
                             .headers(adminHttpHeaders)
                             .contentType(MediaType.APPLICATION_JSON))
-                .andDo(print())
                 .andExpect(status().isOk());
 
         mockMvc.perform(get("/api/session/{id}", sessionId)
