@@ -20,3 +20,11 @@ VALUES ('Admin',
         '2023-01-01T00:00:00',
         '2023-02-15T12:30:00'
        );
+
+INSERT INTO SESSIONS (name, description, date, teacher_id, created_at, updated_at)
+VALUES ('Yoga', 'Yoga session', '2023-01-01T10:00:00', 1, '2023-01-01T08:00:00', '2023-02-15T12:30:00'),
+       ('Pilates', 'Pilates session', '2023-01-01T11:00:00', 2, '2023-01-01T08:05:00', '2023-02-15T12:30:00');
+
+INSERT INTO PARTICIPATE (user_id, session_id)
+VALUES (1, 1),
+       (2, 2);
