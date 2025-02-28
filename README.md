@@ -24,7 +24,7 @@ Make sure you have installed the following tools:
 
 - [Node.js](https://nodejs.org/) (version 16 or higher)
 - [Angular CLI](https://angular.io/cli) (version 14 or higher)
-- [Java JDK](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) (>=8 <=17)
+- [Java JDK](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) (version 8 or higher, 17 max)
 - [Maven](https://maven.apache.org/) (version 3.8 or higher)
 - [MySQL](https://dev.mysql.com/downloads/mysql/) (version 8.0 or higher)
 
